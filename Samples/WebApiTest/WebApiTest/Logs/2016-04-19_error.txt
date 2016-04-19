@@ -1,0 +1,75 @@
+2016-04-19 15:59:14.3785 | Error | WebApi异常 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Cicada.Boot.Aspnet.WebApi.ActionTrackAttribute.GetResponseContent(HttpActionExecutedContext actionExecutedContext) 位置 e:\liu\workspace\net\Cicada\branches\1.0\src\Cicada.Boot.Aspnet.WebApi\ActionTrackAttribute.cs:行号 80
+   在 Cicada.Boot.Aspnet.WebApi.ActionTrackAttribute.OnActionExecutedAsync(HttpActionExecutedContext actionExecutedContext, CancellationToken cancellationToken) 位置 e:\liu\workspace\net\Cicada\branches\1.0\src\Cicada.Boot.Aspnet.WebApi\ActionTrackAttribute.cs:行号 56
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext() 
+ ExceptionFilterAttribute.OnExceptionAsync => WebApiErrorAttribute.OnException => Log.Error 
+
+2016-04-19 15:59:34.8147 | Error | WebApi异常 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Cicada.Boot.Aspnet.WebApi.ActionTrackAttribute.GetResponseContent(HttpActionExecutedContext actionExecutedContext) 位置 e:\liu\workspace\net\Cicada\branches\1.0\src\Cicada.Boot.Aspnet.WebApi\ActionTrackAttribute.cs:行号 80
+   在 Cicada.Boot.Aspnet.WebApi.ActionTrackAttribute.OnActionExecutedAsync(HttpActionExecutedContext actionExecutedContext, CancellationToken cancellationToken) 位置 e:\liu\workspace\net\Cicada\branches\1.0\src\Cicada.Boot.Aspnet.WebApi\ActionTrackAttribute.cs:行号 56
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext() 
+ ExceptionFilterAttribute.OnExceptionAsync => WebApiErrorAttribute.OnException => Log.Error 
+
+2016-04-19 15:59:35.5407 | Error | WebApi异常 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Cicada.Boot.Aspnet.WebApi.ActionTrackAttribute.GetResponseContent(HttpActionExecutedContext actionExecutedContext) 位置 e:\liu\workspace\net\Cicada\branches\1.0\src\Cicada.Boot.Aspnet.WebApi\ActionTrackAttribute.cs:行号 80
+   在 Cicada.Boot.Aspnet.WebApi.ActionTrackAttribute.OnActionExecutedAsync(HttpActionExecutedContext actionExecutedContext, CancellationToken cancellationToken) 位置 e:\liu\workspace\net\Cicada\branches\1.0\src\Cicada.Boot.Aspnet.WebApi\ActionTrackAttribute.cs:行号 56
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext() 
+ ExceptionFilterAttribute.OnExceptionAsync => WebApiErrorAttribute.OnException => Log.Error 
+
+2016-04-19 15:59:51.6888 | Error | WebApi异常 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Cicada.Boot.Aspnet.WebApi.ActionTrackAttribute.GetResponseContent(HttpActionExecutedContext actionExecutedContext) 位置 e:\liu\workspace\net\Cicada\branches\1.0\src\Cicada.Boot.Aspnet.WebApi\ActionTrackAttribute.cs:行号 80
+   在 Cicada.Boot.Aspnet.WebApi.ActionTrackAttribute.OnActionExecutedAsync(HttpActionExecutedContext actionExecutedContext, CancellationToken cancellationToken) 位置 e:\liu\workspace\net\Cicada\branches\1.0\src\Cicada.Boot.Aspnet.WebApi\ActionTrackAttribute.cs:行号 56
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext() 
+ ExceptionFilterAttribute.OnExceptionAsync => WebApiErrorAttribute.OnException => Log.Error 
+
