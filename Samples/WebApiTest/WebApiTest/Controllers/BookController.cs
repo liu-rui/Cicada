@@ -9,6 +9,9 @@ namespace WebApiTest.Controllers
 {
     public class BookController : ApiController
     {
+        public BookController()
+        {
 
+        }
     }
 }
