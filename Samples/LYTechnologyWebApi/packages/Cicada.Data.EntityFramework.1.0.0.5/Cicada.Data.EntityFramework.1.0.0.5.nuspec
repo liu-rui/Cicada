@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Cicada.Data.EntityFramework</id>
+    <version>1.0.0.5</version>
+    <title>Cicada.Data.EntityFramework</title>
+    <authors>liu rui</authors>
+    <owners>liu rui</owners>
+    <projectUrl>https://github.com/liu-rui/Cicada</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/liu-rui/Cicada/master/ico.jpg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>对EF的封装</description>
+    <tags>Cicada</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="Cicada" version="1.0.0.8" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.ComponentModel.DataAnnotations" targetFramework=".NETFramework4.5" />
+    </frameworkAssemblies>
+  </metadata>
+</package>
