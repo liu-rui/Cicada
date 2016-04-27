@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cicada.Boot.Aspnet.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:Cicada.Boot.Aspnet.WebApi.ActionTrackAttribute.OnActionExecutedAsync(System.Web.Http.Filters.HttpActionExecutedContext,System.Threading.CancellationToken)">
+            <summary>
+            在请求执行完后 记录请求的数据以及返回数据
+            </summary>
+            <param name="actionExecutedContext"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

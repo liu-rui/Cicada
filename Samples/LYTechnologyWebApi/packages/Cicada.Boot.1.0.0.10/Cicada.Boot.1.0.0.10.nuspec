@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Cicada.Boot</id>
+    <version>1.0.0.10</version>
+    <title>Cicada.Boot</title>
+    <authors>liu rui</authors>
+    <owners>liu rui</owners>
+    <projectUrl>https://github.com/liu-rui/Cicada</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/liu-rui/Cicada/master/ico.jpg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>启动项</description>
+    <tags>Cicada</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="Cicada.Unity" version="1.0.0.7" />
+        <dependency id="Cicada.NLog" version="1.0.0.6" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
