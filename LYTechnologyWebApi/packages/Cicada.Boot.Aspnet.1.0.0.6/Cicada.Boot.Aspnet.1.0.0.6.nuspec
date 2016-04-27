@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Cicada.Boot.Aspnet</id>
+    <version>1.0.0.6</version>
+    <title>Cicada.Boot.Aspnet</title>
+    <authors>liu rui</authors>
+    <owners>liu rui</owners>
+    <projectUrl>https://github.com/liu-rui/Cicada</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/liu-rui/Cicada/master/ico.jpg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>asp.net项目封装</description>
+    <tags>Cicada</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="WebActivatorEx" version="2.1.0" />
+        <dependency id="Cicada.Boot" version="1.0.0.10" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

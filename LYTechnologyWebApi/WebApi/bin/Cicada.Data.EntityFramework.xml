@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cicada.Data.EntityFramework</name>
+    </assembly>
+    <members>
+        <member name="T:Cicada.Data.EntityFramework.IDbContext">
+            <summary>
+            表示工作单元和存储库模式的组合，可用来查询数据库并将更改组合在一起，这些更改稍后将作为一个单元写回存储区中
+            </summary>
+        </member>
+        <member name="M:Cicada.Data.EntityFramework.IDbContext.Set``1">
+            <summary>
+            针对对上下文和基础存储中给定类型的实体的访问返回一个 DbSet实例
+            </summary>
+            <typeparam name="TEntity">应为其返回一个集的类型实体</typeparam>
+            <returns>给定实体类型的集</returns>
+        </member>
+        <member name="M:Cicada.Data.EntityFramework.IDbContext.SaveChangesAsync(System.Threading.CancellationToken)">
+            <summary>
+            将在此上下文中所做的所有更改异步保存到基础数据库。等待任务完成期间要观察的 CancellationToken
+            </summary>
+            <param name="cancellationToken"></param>
+            <returns>表示异步保存操作的任务。 任务结果包含已写入基础数据库的对象数目</returns>
+        </member>
+        <member name="M:Cicada.Data.EntityFramework.IDbContext.SaveChangesAsync">
+            <summary>
+            将在此上下文中所做的所有更改异步保存到基础数据库
+            </summary>
+            <returns>表示异步保存操作的任务。 任务结果包含已写入基础数据库的对象数目</returns>
+        </member>
+        <member name="M:Cicada.Data.EntityFramework.IDbContext.SaveChanges">
+            <summary>
+            将在此上下文中所做的所有更改保存到基础数据库
+            </summary>
+            <returns>已写入基础数据库的对象的数目</returns>
+        </member>
+        <member name="M:Cicada.Data.EntityFramework.IDbContext.GetValidationErrors">
+            <summary>
+            验证跟踪实体，并返回包含验证结果的 DbEntityValidationResult 的集合
+            </summary>
+            <returns>无效实体的验证结果集合。 集合决不为 null，且不得包含 null 值或有效实体的结果</returns>
+        </member>
+        <member name="M:Cicada.Data.EntityFramework.IDbContext.Entry``1(``0)">
+            <summary>
+            获取给定实体的 DbEntityEntry对象，以便提供对与该实体有关的信息的访问以及对实体执行操作的功能。
+            </summary>
+            <typeparam name="TEntity">实体的类型。</typeparam>
+            <param name="entity">实体的类型。</param>
+            <returns>实体的项</returns>
+        </member>
+        <member name="M:Cicada.Data.EntityFramework.IDbContext.Entry(System.Object)">
+            <summary>
+            获取给定实体的 DbEntityEntry 对象，以便提供对与该实体有关的信息的访问以及对实体执行操作的功能
+            </summary>
+            <param name="entity">实体</param>
+            <returns>实体的项</returns>
+        </member>
+        <member name="P:Cicada.Data.EntityFramework.IDbContext.ChangeTracker">
+            <summary>
+            提供对用于处理实体的更改跟踪的上下文功能的访问
+            </summary>
+        </member>
+        <member name="P:Cicada.Data.EntityFramework.IDbContext.Configuration">
+            <summary>
+            提供对上下文的配置选项的访问
+            </summary>
+        </member>
+        <member name="P:Cicada.Data.EntityFramework.IDbContext.Database">
+            <summary>
+            为此上下文创建一个数据库实例，该上下文允许您对基础数据库执行创建/删除/存在性检查操作。
+            </summary>
+        </member>
+        <member name="M:Cicada.Data.EntityFramework.ModuleBoot.CheckHadDbConetext">
+            <summary>
+            检测是否有存在工具生成的DbContext，如果存在报错。
+            </summary>
+        </member>
+    </members>
+</doc>

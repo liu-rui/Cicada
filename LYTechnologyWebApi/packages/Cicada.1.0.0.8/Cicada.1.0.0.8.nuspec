@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Cicada</id>
+    <version>1.0.0.8</version>
+    <title>Cicada</title>
+    <authors>liu rui</authors>
+    <owners>liu rui</owners>
+    <projectUrl>https://github.com/liu-rui/Cicada</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/liu-rui/Cicada/master/ico.jpg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>基础组件库</description>
+    <tags>Cicada</tags>
+  </metadata>
+</package>
