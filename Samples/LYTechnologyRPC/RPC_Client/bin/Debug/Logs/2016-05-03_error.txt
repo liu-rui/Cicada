@@ -1,0 +1,132 @@
+2016-05-03 14:39:18.8767 | Error | AppDomain未处理异常。 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 RPC_Client.Program.Main(String[] args) 位置 d:\灵铱公司技术资料\Exercise\LYTechnologyRPC\RPC_Client\Program.cs:行号 24
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart() 
+ ModuleBoot.OnUnhandledException => ModuleBoot.DoException => Log.Error 
+
+2016-05-03 14:41:23.9009 | Error | AppDomain未处理异常。 System.InvalidOperationException: 错误的配置，请检查节点cicada.rpc.client.endpoints.1.contract是否配置正确
+   在 Cicada.Rpc.Client.EndpointConfig.Load() 位置 e:\liu\workspace\net\Cicada\branches\1.0\src\Cicada.Rpc\Client\EndpointConfig.cs:行号 57
+   在 Cicada.Rpc.Client.EndpointRegister.Register() 位置 e:\liu\workspace\net\Cicada\branches\1.0\src\Cicada.Rpc\Client\EndpointRegister.cs:行号 18
+   在 Cicada.Rpc.Client.ModuleBoot.Execute() 位置 e:\liu\workspace\net\Cicada\branches\1.0\src\Cicada.Rpc\Client\ModuleBoot.cs:行号 12
+   在 Cicada.Boot.BootStrategies.Module.ModuleBootStrategy.ExecuteModules()
+   在 Cicada.Boot.BootStrategies.Module.ModuleBootStrategy.Run()
+   在 Cicada.Boot.Bootstrapper.Run(IContainer container)
+   在 Cicada.Boot.Bootstrapper.Initialise(IContainer container)
+   在 Cicada.Boot.CicadaApplication.Run()
+   在 RPC_Client.Program.Main(String[] args) 位置 d:\灵铱公司技术资料\Exercise\LYTechnologyRPC\RPC_Client\Program.cs:行号 18
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart() 
+ ModuleBoot.OnUnhandledException => ModuleBoot.DoException => Log.Error 
+
+2016-05-03 14:44:01.5900 | Error | AppDomain未处理异常。 System.InvalidOperationException: 错误的配置，请检查节点cicada.rpc.client.endpoints.1.contract是否配置正确
+   在 Cicada.Rpc.Client.EndpointConfig.Load() 位置 e:\liu\workspace\net\Cicada\branches\1.0\src\Cicada.Rpc\Client\EndpointConfig.cs:行号 57
+   在 Cicada.Rpc.Client.EndpointRegister.Register() 位置 e:\liu\workspace\net\Cicada\branches\1.0\src\Cicada.Rpc\Client\EndpointRegister.cs:行号 18
+   在 Cicada.Rpc.Client.ModuleBoot.Execute() 位置 e:\liu\workspace\net\Cicada\branches\1.0\src\Cicada.Rpc\Client\ModuleBoot.cs:行号 12
+   在 Cicada.Boot.BootStrategies.Module.ModuleBootStrategy.ExecuteModules()
+   在 Cicada.Boot.BootStrategies.Module.ModuleBootStrategy.Run()
+   在 Cicada.Boot.Bootstrapper.Run(IContainer container)
+   在 Cicada.Boot.Bootstrapper.Initialise(IContainer container)
+   在 Cicada.Boot.CicadaApplication.Run()
+   在 RPC_Client.Program.Main(String[] args) 位置 d:\灵铱公司技术资料\Exercise\LYTechnologyRPC\RPC_Client\Program.cs:行号 18
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart() 
+ ModuleBoot.OnUnhandledException => ModuleBoot.DoException => Log.Error 
+
+2016-05-03 14:47:35.9973 | Error | AppDomain未处理异常。 System.InvalidOperationException: 错误的配置，请检查节点cicada.rpc.client.endpoints.1.contract是否配置正确
+   在 Cicada.Rpc.Client.EndpointConfig.Load() 位置 e:\liu\workspace\net\Cicada\branches\1.0\src\Cicada.Rpc\Client\EndpointConfig.cs:行号 57
+   在 Cicada.Rpc.Client.EndpointRegister.Register() 位置 e:\liu\workspace\net\Cicada\branches\1.0\src\Cicada.Rpc\Client\EndpointRegister.cs:行号 18
+   在 Cicada.Rpc.Client.ModuleBoot.Execute() 位置 e:\liu\workspace\net\Cicada\branches\1.0\src\Cicada.Rpc\Client\ModuleBoot.cs:行号 12
+   在 Cicada.Boot.BootStrategies.Module.ModuleBootStrategy.ExecuteModules()
+   在 Cicada.Boot.BootStrategies.Module.ModuleBootStrategy.Run()
+   在 Cicada.Boot.Bootstrapper.Run(IContainer container)
+   在 Cicada.Boot.Bootstrapper.Initialise(IContainer container)
+   在 Cicada.Boot.CicadaApplication.Run()
+   在 RPC_Client.Program.Main(String[] args) 位置 d:\灵铱公司技术资料\Exercise\LYTechnologyRPC\RPC_Client\Program.cs:行号 18
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart() 
+ ModuleBoot.OnUnhandledException => ModuleBoot.DoException => Log.Error 
+
+2016-05-03 15:03:04.3153 | Error | AppDomain未处理异常。 System.InvalidOperationException: 错误的配置，请检查节点cicada.rpc.client.endpoints.1.contract是否配置正确
+   在 Cicada.Rpc.Client.EndpointConfig.Load() 位置 e:\liu\workspace\net\Cicada\branches\1.0\src\Cicada.Rpc\Client\EndpointConfig.cs:行号 57
+   在 Cicada.Rpc.Client.EndpointRegister.Register() 位置 e:\liu\workspace\net\Cicada\branches\1.0\src\Cicada.Rpc\Client\EndpointRegister.cs:行号 18
+   在 Cicada.Rpc.Client.ModuleBoot.Execute() 位置 e:\liu\workspace\net\Cicada\branches\1.0\src\Cicada.Rpc\Client\ModuleBoot.cs:行号 12
+   在 Cicada.Boot.BootStrategies.Module.ModuleBootStrategy.ExecuteModules()
+   在 Cicada.Boot.BootStrategies.Module.ModuleBootStrategy.Run()
+   在 Cicada.Boot.Bootstrapper.Run(IContainer container)
+   在 Cicada.Boot.Bootstrapper.Initialise(IContainer container)
+   在 Cicada.Boot.CicadaApplication.Run()
+   在 RPC_Client.Program.Main(String[] args) 位置 d:\灵铱公司技术资料\Exercise\LYTechnologyRPC\RPC_Client\Program.cs:行号 18
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart() 
+ ModuleBoot.OnUnhandledException => ModuleBoot.DoException => Log.Error 
+
+2016-05-03 15:04:04.2351 | Error | AppDomain未处理异常。 System.InvalidOperationException: 错误的配置，请检查节点cicada.rpc.client.endpoints.1.contract是否配置正确
+   在 Cicada.Rpc.Client.EndpointConfig.Load() 位置 e:\liu\workspace\net\Cicada\branches\1.0\src\Cicada.Rpc\Client\EndpointConfig.cs:行号 57
+   在 Cicada.Rpc.Client.EndpointRegister.Register() 位置 e:\liu\workspace\net\Cicada\branches\1.0\src\Cicada.Rpc\Client\EndpointRegister.cs:行号 18
+   在 Cicada.Rpc.Client.ModuleBoot.Execute() 位置 e:\liu\workspace\net\Cicada\branches\1.0\src\Cicada.Rpc\Client\ModuleBoot.cs:行号 12
+   在 Cicada.Boot.BootStrategies.Module.ModuleBootStrategy.ExecuteModules()
+   在 Cicada.Boot.BootStrategies.Module.ModuleBootStrategy.Run()
+   在 Cicada.Boot.Bootstrapper.Run(IContainer container)
+   在 Cicada.Boot.Bootstrapper.Initialise(IContainer container)
+   在 Cicada.Boot.CicadaApplication.Run()
+   在 RPC_Client.Program.Main(String[] args) 位置 d:\灵铱公司技术资料\Exercise\LYTechnologyRPC\RPC_Client\Program.cs:行号 18
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart() 
+ ModuleBoot.OnUnhandledException => ModuleBoot.DoException => Log.Error 
+
+2016-05-03 15:16:38.2295 | Error | AppDomain未处理异常。 System.InvalidOperationException: 错误的配置，请检查节点cicada.rpc.client.endpoints.1.contract是否配置正确
+   在 Cicada.Rpc.Client.EndpointConfig.Load() 位置 e:\liu\workspace\net\Cicada\branches\1.0\src\Cicada.Rpc\Client\EndpointConfig.cs:行号 57
+   在 Cicada.Rpc.Client.EndpointRegister.Register() 位置 e:\liu\workspace\net\Cicada\branches\1.0\src\Cicada.Rpc\Client\EndpointRegister.cs:行号 18
+   在 Cicada.Rpc.Client.ModuleBoot.Execute() 位置 e:\liu\workspace\net\Cicada\branches\1.0\src\Cicada.Rpc\Client\ModuleBoot.cs:行号 12
+   在 Cicada.Boot.BootStrategies.Module.ModuleBootStrategy.ExecuteModules()
+   在 Cicada.Boot.BootStrategies.Module.ModuleBootStrategy.Run()
+   在 Cicada.Boot.Bootstrapper.Run(IContainer container)
+   在 Cicada.Boot.Bootstrapper.Initialise(IContainer container)
+   在 Cicada.Boot.CicadaApplication.Run()
+   在 RPC_Client.Program.Main(String[] args) 位置 d:\灵铱公司技术资料\Exercise\LYTechnologyRPC\RPC_Client\Program.cs:行号 18
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart() 
+ ModuleBoot.OnUnhandledException => ModuleBoot.DoException => Log.Error 
+
