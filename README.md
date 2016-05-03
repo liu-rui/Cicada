@@ -7,7 +7,6 @@
 
   * 1.1 [点击查看MVC类型项目](HelpMd/MVC.md)
   * 1.2 [点击查看WebApi类型项目](HelpMd/WebApi.md)
-  * 1.3 [点击查看WCF类型项目](HelpMd/WCF.md)
   * 1.4 [点击查看UnitTest单元测试项目](HelpMd/UnitTest.md)
 
  注：项目程序都在Samples这个文件夹里；Tools文件夹里面是框架使用到的一些软件；一些Doc类型的文档都在Doc这个文件夹里。
