@@ -1,0 +1,8 @@
+2016-05-03 10:16:28.6695 | Error | WEB未处理异常
+2016-05-03 10:16:50.5522 | Error | WEB未处理异常
+2016-05-03 10:17:47.5722 | Info  | 请求操作 url：http://localhost:52019/api/BookApi  控制器名称：BookApi 动作：Get 数据：
+2016-05-03 10:17:48.6319 | Info  | 响应操作 url：http://localhost:52019/api/BookApi  控制器名称：BookApi 动作：Get 结果：<int xmlns="http://schemas.microsoft.com/2003/10/Serialization/">9</int> 执行时间:1061毫秒
+2016-05-03 10:17:58.9722 | Info  | 请求操作 url：http://localhost:52019/api/BookApi  控制器名称：BookApi 动作：Get 数据：
+2016-05-03 10:18:00.9566 | Info  | 响应操作 url：http://localhost:52019/api/BookApi  控制器名称：BookApi 动作：Get 结果：<int xmlns="http://schemas.microsoft.com/2003/10/Serialization/">9</int> 执行时间:1984毫秒
+2016-05-03 10:18:27.2380 | Info  | 请求操作 url：http://localhost:52019/api/BookApi?bookId=2  控制器名称：BookApi 动作：Get 数据：
+2016-05-03 10:18:31.8474 | Info  | 响应操作 url：http://localhost:52019/api/BookApi?bookId=2  控制器名称：BookApi 动作：Get 结果：<int xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</int> 执行时间:4609毫秒
