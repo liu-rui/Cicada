@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Cicada 框架整体介绍
 
 首先得以肯定的是，这是一个很容易上手开发的系统框架，使开发人员不需要过多地去关注系统相对底层的一些开发，
@@ -8,13 +8,8 @@
 
   * 1.1 [点击查看MVC类型项目](HelpMd/MVC.md)
   * 1.2 [点击查看WebApi类型项目](HelpMd/WebApi.md)
+  * 1.3 [点击查看WCF类型项目](HelpMd/WCF.md)
   * 1.4 [点击查看UnitTest单元测试项目](HelpMd/UnitTest.md)
 
  注：项目程序都在Samples这个文件夹里；Tools文件夹里面是框架使用到的一些软件；一些Doc类型的文档都在Doc这个文件夹里。
 
-
-
-=======
-# WebApiPro
-测试分支
->>>>>>> d11c63ab50f123b1b319cd765a5315f3de6948f8
