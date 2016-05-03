@@ -1,5 +1,5 @@
 
-### 这是有关MvcApi类型项目的介绍，使用主要注意一下几点：
+### 这是有关MvcApi类型项目的介绍，使用主要注意以下几点：
 	
   * 1 MvcApi项目，通过NuGet程序包搜索“Cicada”，在结果里面有一个"Cicada.Boot.Aspnet.MVC",安装到MVC项目即可;
 		同样安装一下Cicada.Boot.Aspnet.WebApi；样再安装一下Cicada.Data.EntityFramework;然后MvcApi项目涉及到框架的东西基本引用完毕。
