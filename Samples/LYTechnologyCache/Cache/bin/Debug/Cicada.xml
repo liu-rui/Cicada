@@ -1,0 +1,3477 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cicada</name>
+    </assembly>
+    <members>
+        <member name="T:Cicada.Configuration.IConfigurationDataRespository">
+            <summary>
+            配置数据仓库接口
+            </summary>
+        </member>
+        <member name="T:Cicada.CicadaFacade">
+            <summary>
+            基础框架外观
+            </summary>
+        </member>
+        <member name="M:Cicada.CicadaFacade.CreateLog``1">
+            <summary>
+            创建日志
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <returns>日志对象</returns>
+        </member>
+        <member name="M:Cicada.CicadaFacade.CreateLog(System.String)">
+            <summary>
+            创建日志
+            </summary>
+            <param name="name">名称</param>
+            <returns>日志对象</returns>
+        </member>
+        <member name="P:Cicada.CicadaFacade.Container">
+            <summary>
+            依赖注入容器
+            </summary>
+        </member>
+        <member name="T:Cicada.Core.DefaultNow">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Cicada.Core.INow">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Cicada.Core.INow.GetNow">
+            <summary>
+             返回当前时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Cicada.Core.IIo">
+            <summary>
+            输入输出操作接口
+            </summary>
+        </member>
+        <member name="M:Cicada.Core.IIo.StreamToBytes(System.IO.Stream)">
+            <summary>
+            将 Stream 转成 byte[]
+            </summary>
+            <param name="stream"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.IIo.BytesToStream(System.Byte[])">
+            <summary>
+            将 byte[] 转成 Stream
+            </summary>
+            <param name="bytes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.IIo.StreamToFile(System.IO.Stream,System.String,System.Boolean)">
+            <summary>
+            将 Stream 写入文件 
+            </summary>
+            <param name="stream">流对象</param>
+            <param name="filename">文件名</param>
+            <param name="createDir">是否自动创建目录</param>
+        </member>
+        <member name="M:Cicada.Core.IIo.BytesToFile(System.Byte[],System.String,System.Boolean)">
+            <summary>
+            保存byte[]到文件
+            </summary>
+            <param name="bytes"></param>
+            <param name="filename"></param>
+            <param name="createDir"></param>
+        </member>
+        <member name="M:Cicada.Core.IIo.FileToStream(System.String)">
+            <summary>
+            从文件中读取到MemoryStream
+            </summary>
+            <param name="filename"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.IIo.ReadTextFile(System.String,System.Text.Encoding)">
+            <summary>
+            读取文本文件内容
+            </summary>
+            <param name="filename"></param>
+            <param name="encoding"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.IIo.ReadStreamToString(System.IO.Stream,System.Text.Encoding)">
+            <summary>
+            
+            </summary>
+            <param name="stream"></param>
+            <param name="encoding"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cicada.Core.Io">
+            <summary>
+            输入输出操作类
+            </summary>
+        </member>
+        <member name="M:Cicada.Core.Io.StreamToBytes(System.IO.Stream)">
+            <summary>
+            将 Stream 转成 byte[]
+            </summary>
+            <param name="stream"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.Io.BytesToStream(System.Byte[])">
+            <summary>
+            将 byte[] 转成 Stream
+            </summary>
+            <param name="bytes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.Io.StreamToFile(System.IO.Stream,System.String,System.Boolean)">
+            <summary>
+            将 Stream 写入文件 
+            </summary>
+            <param name="stream">流对象</param>
+            <param name="filename">文件名</param>
+            <param name="createDir">是否自动创建目录</param>
+        </member>
+        <member name="M:Cicada.Core.Io.BytesToFile(System.Byte[],System.String,System.Boolean)">
+            <summary>
+            保存byte[]到文件
+            </summary>
+            <param name="bytes"></param>
+            <param name="filename"></param>
+            <param name="createDir"></param>
+        </member>
+        <member name="M:Cicada.Core.Io.FileToStream(System.String)">
+            <summary>
+            从文件中读取到MemoryStream
+            </summary>
+            <param name="filename"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.Io.ReadTextFile(System.String,System.Text.Encoding)">
+            <summary>
+            读取文本文件内容
+            </summary>
+            <param name="filename"></param>
+            <param name="encoding"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.Io.ReadStreamToString(System.IO.Stream,System.Text.Encoding)">
+            <summary>
+            
+            </summary>
+            <param name="stream"></param>
+            <param name="encoding"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cicada.Core.MoneyUtil">
+            <summary>
+            金额转换类。静态类，用于金额大小写转换的类
+            </summary>
+        </member>
+        <member name="M:Cicada.Core.MoneyUtil.ToCn(System.Decimal)">
+            <summary>
+            货币金额中文大写转换方法, 符合财务记帐要求
+            </summary>
+            <param name="money">金额</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.MoneyUtil.ToCn(System.String)">
+            <summary>
+            货币金额中文大写转换方法, 符合财务记帐要求
+            </summary>
+            <param name="money">金额字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.MoneyUtil.ToEn(System.Decimal)">
+            <summary>
+            货币金额英文大写转换方法
+            </summary>
+            <param name="money">金额</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.MoneyUtil.ToEn(System.String)">
+            <summary>
+            货币金额英文大写转换方法
+            </summary>
+            <param name="money">金额</param>
+            <returns></returns>
+        </member>
+        <member name="T:Cicada.Core.Ret">
+            <summary>
+            返回结果类型
+            </summary>
+        </member>
+        <member name="P:Cicada.Core.Ret.Status">
+            <summary>
+            状态码
+            </summary>
+        </member>
+        <member name="P:Cicada.Core.Ret.Message">
+            <summary>
+            消息
+            </summary>
+        </member>
+        <member name="T:Cicada.Core.Ret`1">
+            <summary>
+            返回结果类型(泛型)
+            </summary>
+            <typeparam name="T">内容类型</typeparam>
+        </member>
+        <member name="P:Cicada.Core.Ret`1.Data">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="T:Cicada.DI.ContainerExtensions">
+            <summary>
+            依赖注入扩展
+            </summary>
+        </member>
+        <member name="M:Cicada.DI.ContainerExtensions.RegisterInstance(Cicada.DI.IContainer,System.Type,System.Object)">
+            <summary>
+            注册对象
+            </summary>
+            <param name="container">依赖注入接口</param>
+            <param name="t">类型</param>
+            <param name="instance">对象</param>
+            <returns>依赖注入接口</returns>
+        </member>
+        <member name="M:Cicada.DI.ContainerExtensions.RegisterInstance``1(Cicada.DI.IContainer,``0)">
+            <summary>
+            注册对象
+            </summary>
+            <typeparam name="TInterface">类型</typeparam>
+            <param name="container">依赖注入接口</param>
+            <param name="instance">对象</param>
+            <returns>依赖注入接口</returns>
+        </member>
+        <member name="M:Cicada.DI.ContainerExtensions.RegisterInstance``1(Cicada.DI.IContainer,System.String,``0)">
+            <summary>
+            注册对象
+            </summary>
+            <typeparam name="TInterface">类型</typeparam>
+            <param name="container">依赖注入接口</param>
+            <param name="name">名称</param>
+            <param name="instance">对象</param>
+            <returns>依赖注入接口</returns>
+        </member>
+        <member name="M:Cicada.DI.ContainerExtensions.RegisterType(Cicada.DI.IContainer,System.Type,Cicada.DI.Lifetime)">
+            <summary>
+            注册类型
+            </summary>
+            <param name="container">依赖注入接口</param>
+            <param name="t">类型</param>
+            <param name="lifeTime">生命周期</param>
+            <returns>依赖注入接口</returns>
+        </member>
+        <member name="M:Cicada.DI.ContainerExtensions.RegisterType(Cicada.DI.IContainer,System.Type,System.String,Cicada.DI.Lifetime)">
+            <summary>
+            注册类型
+            </summary>
+            <param name="container">依赖注入接口</param>
+            <param name="t">类型</param>
+            <param name="name">名称</param>
+            <param name="lifeTime">生命周期</param>
+            <returns>依赖注入接口</returns>
+        </member>
+        <member name="M:Cicada.DI.ContainerExtensions.RegisterType``1(Cicada.DI.IContainer,Cicada.DI.Lifetime)">
+            <summary>
+            注册类型
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="container">依赖注入接口</param>
+            <param name="lifeTime">生命周期</param>
+            <returns>依赖注入接口</returns>
+        </member>
+        <member name="M:Cicada.DI.ContainerExtensions.RegisterType``1(Cicada.DI.IContainer,System.String,Cicada.DI.Lifetime)">
+            <summary>
+            注册类型
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="container">依赖注入接口</param>
+            <param name="name">名称</param>
+            <param name="lifeTime">生命周期</param>
+            <returns>依赖注入接口</returns>
+        </member>
+        <member name="M:Cicada.DI.ContainerExtensions.RegisterType(Cicada.DI.IContainer,System.Type,System.Type,Cicada.DI.Lifetime)">
+            <summary>
+            注册类型
+            </summary>
+            <param name="container">依赖注入接口</param>
+            <param name="from">父类型</param>
+            <param name="to">类型</param>
+            <param name="lifeTime">生命周期</param>
+            <returns>依赖注入接口</returns>
+        </member>
+        <member name="M:Cicada.DI.ContainerExtensions.RegisterType``2(Cicada.DI.IContainer,Cicada.DI.Lifetime)">
+            <summary>
+            注册类型
+            </summary>
+            <typeparam name="TFrom">父类型</typeparam>
+            <typeparam name="TTo">类型</typeparam>
+            <param name="container">依赖注入接口</param>
+            <param name="lifeTime">生命周期</param>
+            <returns>依赖注入接口</returns>
+        </member>
+        <member name="M:Cicada.DI.ContainerExtensions.RegisterType``2(Cicada.DI.IContainer,System.String,Cicada.DI.Lifetime)">
+            <summary>
+            注册类型
+            </summary>
+            <typeparam name="TFrom">父类型</typeparam>
+            <typeparam name="TTo">类型</typeparam>
+            <param name="container">依赖注入接口</param>
+            <param name="name">名称</param>
+            <param name="lifeTime">生命周期</param>
+            <returns>依赖注入接口</returns>
+        </member>
+        <member name="M:Cicada.DI.ContainerExtensions.Resolve(Cicada.DI.IContainer,System.Type)">
+            <summary>
+            解析成对象
+            </summary>
+            <param name="container">依赖注入接口</param>
+            <param name="t">类型</param>
+            <returns>对象</returns>
+        </member>
+        <member name="M:Cicada.DI.ContainerExtensions.Resolve``1(Cicada.DI.IContainer)">
+            <summary>
+            解析成对象
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="container">依赖注入接口</param>
+            <returns>对象</returns>
+        </member>
+        <member name="M:Cicada.DI.ContainerExtensions.Resolve``1(Cicada.DI.IContainer,System.String)">
+            <summary>
+            解析成对象
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="container">依赖注入接口</param>
+            <param name="name">名称</param>
+            <returns>对象</returns>
+        </member>
+        <member name="M:Cicada.DI.ContainerExtensions.ResolveAll``1(Cicada.DI.IContainer)">
+            <summary>
+            解析所有对象
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="container">依赖注入接口</param>
+            <returns>对象列表</returns>
+        </member>
+        <member name="M:Cicada.DI.ContainerExtensions.RegisterFromAssembly(Cicada.DI.IContainer,System.Reflection.Assembly)">
+            <summary>
+            自动装配指定程序集中定义的类型
+            </summary>
+            <param name="container">依赖注入接口</param>
+            <param name="assembly"></param>
+            <returns>依赖注入接口</returns>
+        </member>
+        <member name="M:Cicada.DI.ContainerExtensions.RegisterFromProductName(Cicada.DI.IContainer,System.String)">
+            <summary>
+            自动装配指定产品名称的程序集中的类型
+            </summary>
+            <param name="container">依赖注入接口</param>
+            <param name="productName">产品名称</param>
+        </member>
+        <member name="T:Cicada.DI.ContainerSingleton">
+            <summary>
+            依赖注入容器工厂类
+            </summary>
+        </member>
+        <member name="M:Cicada.DI.ContainerSingleton.SetContainer(Cicada.DI.IContainer)">
+            <summary>
+            设置依赖注入操作类
+            </summary>
+            <param name="container"></param>
+        </member>
+        <member name="P:Cicada.DI.ContainerSingleton.Instance">
+            <summary>
+            依赖注入操作类
+            </summary>
+        </member>
+        <member name="T:Cicada.DI.IContainer">
+            <summary>
+            依赖注入接口
+            </summary>
+        </member>
+        <member name="M:Cicada.DI.IContainer.RegisterInstance(System.Type,System.String,System.Object)">
+            <summary>
+            注册对象
+            </summary>
+            <param name="t">类型</param>
+            <param name="name">名称</param>
+            <param name="instance">对象</param>
+            <returns>依赖注入接口</returns>
+        </member>
+        <member name="M:Cicada.DI.IContainer.RegisterType(System.Type,System.Type,System.String,Cicada.DI.Lifetime)">
+            <summary>
+            注册类型
+            </summary>
+            <param name="from">父类型</param>
+            <param name="to">类型</param>
+            <param name="name">名称</param>
+            <param name="lifeTime">生命周期</param>
+            <returns>依赖注入接口</returns>
+        </member>
+        <member name="M:Cicada.DI.IContainer.Resolve(System.Type,System.String)">
+            <summary>
+            解析成对象
+            </summary>
+            <param name="t">类型</param>
+            <param name="name">名称</param>
+            <returns>对象</returns>
+        </member>
+        <member name="M:Cicada.DI.IContainer.ResolveAll(System.Type)">
+            <summary>
+            解析所有对象
+            </summary>
+            <param name="t">类型</param>
+            <returns>对象列表</returns>
+        </member>
+        <member name="M:Cicada.DI.IContainer.CreateChildContainer">
+            <summary>
+            创建子容器
+            </summary>
+            <returns>子容器</returns>
+        </member>
+        <member name="T:Cicada.DI.Lifetime">
+            <summary>
+            对象生命周期
+            </summary>
+        </member>
+        <member name="F:Cicada.DI.Lifetime.PerResolve">
+            <summary>
+            每次解析时创建
+            </summary>
+        </member>
+        <member name="F:Cicada.DI.Lifetime.Singleton">
+            <summary>
+            单例
+            </summary>
+        </member>
+        <member name="T:Cicada.DI.NullContainer">
+            <summary>
+            默认依赖注入实现
+            </summary>
+        </member>
+        <member name="M:Cicada.DI.NullContainer.RegisterInstance(System.Type,System.String,System.Object)">
+            <summary>
+            注册实例
+            </summary>
+            <param name="t">基类型</param>
+            <param name="name">名称</param>
+            <param name="instance">实例</param>
+            <returns>依赖注入实现对象</returns>
+        </member>
+        <member name="M:Cicada.DI.NullContainer.RegisterType(System.Type,System.Type,System.String,Cicada.DI.Lifetime)">
+            <summary>
+            注册类型
+            </summary>
+            <param name="from">父类型</param>
+            <param name="to">子类型</param>
+            <param name="name">名称</param>
+            <param name="lifeTime">生命周期</param>
+            <returns>依赖注入实现对象</returns>
+        </member>
+        <member name="M:Cicada.DI.NullContainer.Resolve(System.Type,System.String)">
+            <summary>
+            解析成对象
+            </summary>
+            <param name="t">类型</param>
+            <param name="name">名称</param>
+            <returns>对象</returns>
+        </member>
+        <member name="M:Cicada.DI.NullContainer.ResolveAll(System.Type)">
+            <summary>
+            解析所有对象
+            </summary>
+            <param name="t">父类型</param>
+            <returns>对象列表</returns>
+        </member>
+        <member name="T:Cicada.Core.Guard">
+            <summary>
+            参数有效性验证
+            </summary>
+        </member>
+        <member name="M:Cicada.Core.Guard.ThrowIfArgumentIsNull(System.Object,System.String)">
+            <summary>
+            当参数为null时抛出ArgumentNullException
+            </summary>
+            <param name="argumentValue">参数值</param>
+            <param name="argumentName">参数名称</param>
+            <exception cref="T:System.ArgumentNullException">参数null异常</exception>
+        </member>
+        <member name="M:Cicada.Core.Guard.ThrowIfArgumentIsNull(System.Object,System.String,System.String)">
+            <summary>
+            当参数为null时抛出ArgumentNullException
+            </summary>
+            <param name="argumentValue">参数值</param>
+            <param name="argumentName">参数名称</param>
+            <param name="message">提示信息</param>
+            <exception cref="T:System.ArgumentNullException">参数为null异常</exception>
+        </member>
+        <member name="M:Cicada.Core.Guard.ThrowIfArgumentIsNullOrEmpty(System.String,System.String)">
+            <summary>
+            判断字符串类型的参数值是否有效；当为null或者长度为0为无效，无效时抛出异常
+            </summary>
+            <param name="argumentValue">参数值</param>
+            <param name="argumentName">参数名称</param>
+            <exception cref="T:System.ArgumentNullException">参数null异常</exception>
+            <exception cref="T:System.ArgumentException">参数异常</exception>
+        </member>
+        <member name="M:Cicada.Core.Guard.ThrowIfArgumentLessThanZero(System.Int32,System.String)">
+            <summary>
+            整数小于0为无效，抛出异常
+            </summary>
+            <param name="argumentValue">参数值</param>
+            <param name="argumentName">参数名称</param>
+            <exception cref="T:System.ArgumentException">参数异常</exception>
+        </member>
+        <member name="M:Cicada.Core.Guard.ThrowIsArrayEmpty(System.Array,System.String)">
+            <summary>
+            数组为空时无效，抛出异常
+            </summary>
+            <param name="ary">参数</param>
+            <param name="argumentName">参数名称</param>
+        </member>
+        <member name="M:Cicada.Core.Guard.TryDo(System.Delegate,System.Int32,System.Int32,System.Object[])">
+            <summary>
+             多次尝试执行代理方法，如果仍然失败，则抛出异常
+            </summary>
+            <param name="method">需执行的方法</param>
+            <param name="tryCount">尝试次数</param>
+            <param name="interval">尝试执行间隔，毫秒</param>
+            <param name="args">方法执行参数</param>
+            <returns>回调方法的返回结果</returns>
+        </member>
+        <member name="M:Cicada.Core.Guard.TryDo(System.Delegate,System.Type,System.Int32,System.Int32,System.Object[])">
+            <summary>
+             多次尝试执行代理方法，如果仍然失败，则抛出异常
+            </summary>
+            <param name="method">需执行的方法</param>
+            <param name="tryCount">尝试次数</param>
+            <param name="exceptionType">异常类型</param>
+            <param name="interval">尝试执行间隔，毫秒</param>
+            <param name="args">方法执行参数</param>
+            <returns>回调方法的返回结果</returns>
+        </member>
+        <member name="M:Cicada.Core.Guard.TryDo(System.Delegate,System.Type,System.Action{System.Int32},System.Int32,System.Int32,System.Object[])">
+            <summary>
+            多次尝试执行代理方法，如果仍然失败，则抛出异常
+            </summary>
+            <param name="method">需执行的方法</param>
+            <param name="exceptionType">异常类型</param>
+            <param name="calcback">尝试回调</param>
+            <param name="tryCount">尝试次数</param>
+            <param name="interval">尝试执行间隔，毫秒</param>
+            <param name="args">方法执行参数</param>
+            <returns>回调方法的返回结果</returns>
+        </member>
+        <member name="T:Cicada.Core.LimitedCharFilter">
+            <summary>
+            字符限制检查器，用于检验或替换字符串，常用于注册
+            存在有两种模式：
+                1）只允许模式，不存在于已定义的字符集合中的字符都是被禁止的
+                2）只禁止模式，不存在于已定义的字符集合中的字符都是被允许的
+            </summary>
+        </member>
+        <member name="M:Cicada.Core.LimitedCharFilter.#ctor(System.Boolean,System.Collections.Generic.IEnumerable{System.Char})">
+            <summary>
+            构造函数
+            </summary>
+            <param name="isAllow">检查器模式:true只允许模式 false只禁止模式</param>
+            <param name="chars">定义的字符集合</param>
+        </member>
+        <member name="M:Cicada.Core.LimitedCharFilter.AddChar(System.Char)">
+            <summary>
+            添加字符定义
+            </summary>
+            <param name="chr"></param>
+        </member>
+        <member name="M:Cicada.Core.LimitedCharFilter.AddChars(System.Collections.Generic.IEnumerable{System.Char})">
+            <summary>
+            添加字符集合定义
+            </summary>
+            <param name="chars">字符集合</param>
+        </member>
+        <member name="M:Cicada.Core.LimitedCharFilter.AddChars(System.String)">
+            <summary>
+            添加字符集合定义
+            </summary>
+            <param name="chars">字符集合</param>
+        </member>
+        <member name="M:Cicada.Core.LimitedCharFilter.AddNumberChars">
+            <summary>
+            添加数字字符集合定义
+            </summary>
+        </member>
+        <member name="M:Cicada.Core.LimitedCharFilter.AddLowerChars">
+            <summary>
+            添加小写字符集合定义
+            </summary>
+        </member>
+        <member name="M:Cicada.Core.LimitedCharFilter.AddUpperChars">
+            <summary>
+            添加大写字符集合定义
+            </summary>
+        </member>
+        <member name="M:Cicada.Core.LimitedCharFilter.AddLetterChars">
+            <summary>
+            添加字母字符集合定义
+            </summary>
+        </member>
+        <member name="M:Cicada.Core.LimitedCharFilter.AddChinese">
+            <summary>
+            添加中文字符集合定义
+            </summary>
+        </member>
+        <member name="M:Cicada.Core.LimitedCharFilter.IsValid(System.String)">
+            <summary>
+            验证是否有效
+            </summary>
+            <param name="input">输入的字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.LimitedCharFilter.Replace(System.String,System.String)">
+            <summary>
+            用指定字符串替换限制的字符
+            </summary>
+            <param name="input">输入的字符串</param>
+            <param name="mask">替换的字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.LimitedCharFilter.GetLimitedChars">
+            <summary>
+            获得定义的字符集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Cicada.Core.LimitedCharFilter.IsAllow">
+            <summary>
+            此检查器是只允许模式还是只禁止模式
+            </summary>
+        </member>
+        <member name="T:Cicada.Globalization.ChineseCalendar">
+            <summary>
+            属相
+            </summary>
+            <summary>
+            中国阴历日期处理类
+            </summary>
+            <summary>
+            二十四节气
+            </summary>
+        </member>
+        <member name="F:Cicada.Globalization.ChineseCalendar.Constellations">
+            <summary>
+            星座集合
+            </summary>
+        </member>
+        <member name="F:Cicada.Globalization.ChineseCalendar.BirthStones">
+            <summary>
+            诞生石集合
+            </summary>
+        </member>
+        <member name="F:Cicada.Globalization.ChineseCalendar.Weeks">
+            <summary>
+            星期集合
+            </summary>
+        </member>
+        <member name="M:Cicada.Globalization.ChineseCalendar.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Cicada.Globalization.ChineseCalendar.#ctor(System.DateTime)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="date">阳历日期</param>
+        </member>
+        <member name="M:Cicada.Globalization.ChineseCalendar.#ctor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="year">阳历年</param>
+            <param name="month">阳历月</param>
+            <param name="day">阳历日</param>
+        </member>
+        <member name="M:Cicada.Globalization.ChineseCalendar.#ctor(System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="year">阴历年</param>
+            <param name="month">阴历月</param>
+            <param name="day">阴历日</param>
+            <param name="isLeapMonth">是否闰月</param>
+        </member>
+        <member name="M:Cicada.Globalization.ChineseCalendar.GetLunarNewYearDate(System.Int32)">
+            <summary>
+            获取指定年份春节当日（正月初一）的阳历日期
+            </summary>
+            <param name="year">指定的年份</param>
+        </member>
+        <member name="M:Cicada.Globalization.ChineseCalendar.GetDateFromLunarDate(System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            阴历转阳历
+            </summary>
+            <param name="year">阴历年</param>
+            <param name="month">阴历月</param>
+            <param name="day">阴历日</param>
+            <param name="isLeapMonth">是否闰月</param>
+        </member>
+        <member name="F:Cicada.Globalization.ChineseCalendar.SolarHolidays">
+            <summary>
+            阳历节日
+            </summary>
+        </member>
+        <member name="F:Cicada.Globalization.ChineseCalendar.LunarHolidays">
+            <summary>
+            阴历节日
+            </summary>
+        </member>
+        <member name="F:Cicada.Globalization.ChineseCalendar.WeekHolidays">
+            <summary>
+            按某月第几个星期的星期几计算的节日
+            </summary>
+        </member>
+        <member name="F:Cicada.Globalization.ChineseCalendar.SolarTerms">
+            <summary>
+            节气集合
+            </summary>
+        </member>
+        <member name="P:Cicada.Globalization.ChineseCalendar.Animal">
+            <summary>
+            获取属相
+            </summary>
+        </member>
+        <member name="P:Cicada.Globalization.ChineseCalendar.AnimalText">
+            <summary>
+            获取属相
+            </summary>
+        </member>
+        <member name="P:Cicada.Globalization.ChineseCalendar.Constellation">
+             <summary>
+             获取星座
+             </summary>
+             <remarks>
+             星座划分
+            白羊座：   3月21日------4月19日     诞生石：   钻石   
+            金牛座：   4月20日------5月20日   诞生石：   蓝宝石   
+            双子座：   5月21日------6月21日     诞生石：   玛瑙   
+            巨蟹座：   6月22日------7月22日   诞生石：   珍珠   
+            狮子座：   7月23日------8月22日   诞生石：   红宝石   
+            处女座：   8月23日------9月22日   诞生石：   红条纹玛瑙   
+            天秤座：   9月23日------10月23日     诞生石：   蓝宝石   
+            天蝎座：   10月24日-----11月21日     诞生石：   猫眼石   
+            射手座：   11月22日-----12月21日   诞生石：   黄宝石   
+            摩羯座：   12月22日-----1月19日   诞生石：   土耳其玉   
+            水瓶座：   1月20日-----2月18日   诞生石：   紫水晶   
+            双鱼座：   2月19日------3月20日   诞生石：   月长石，血石  
+             </remarks>
+        </member>
+        <member name="P:Cicada.Globalization.ChineseCalendar.ConstellationText">
+            <summary>
+            获取星座
+            </summary>
+        </member>
+        <member name="P:Cicada.Globalization.ChineseCalendar.BirthStoneText">
+            <summary>
+            获取诞生石
+            </summary>
+        </member>
+        <member name="P:Cicada.Globalization.ChineseCalendar.SolarDate">
+            <summary>
+            获取当前阳历时间
+            </summary>
+        </member>
+        <member name="P:Cicada.Globalization.ChineseCalendar.Next">
+            <summary>
+            获取当前日期的后一天
+            </summary>
+        </member>
+        <member name="P:Cicada.Globalization.ChineseCalendar.Previous">
+            <summary>
+            获取当前日期的前一天
+            </summary>
+        </member>
+        <member name="P:Cicada.Globalization.ChineseCalendar.IsLeapYear">
+            <summary>
+            是否为闰年
+            </summary>
+        </member>
+        <member name="P:Cicada.Globalization.ChineseCalendar.LunarYear">
+            <summary>
+            获取阴历年份
+            </summary>
+        </member>
+        <member name="P:Cicada.Globalization.ChineseCalendar.LunarYearText">
+            <summary>
+            获取阴历年份中文名称
+            </summary>
+        </member>
+        <member name="P:Cicada.Globalization.ChineseCalendar.IsLeapMonth">
+            <summary>
+            是否为闰月
+            </summary>
+        </member>
+        <member name="P:Cicada.Globalization.ChineseCalendar.LunarMonth">
+            <summary>
+            获取阴历月份
+            </summary>
+        </member>
+        <member name="P:Cicada.Globalization.ChineseCalendar.MonthText">
+            <summary>
+            获取阴历月份中文名称
+            </summary>
+        </member>
+        <member name="P:Cicada.Globalization.ChineseCalendar.IsLeapDay">
+            <summary>
+            是否为闰日
+            </summary>
+        </member>
+        <member name="P:Cicada.Globalization.ChineseCalendar.LunarDay">
+            <summary>
+            获取阴历日期
+            </summary>
+        </member>
+        <member name="P:Cicada.Globalization.ChineseCalendar.LunarDayText">
+            <summary>
+            获取阴历日期中文名称
+            </summary>
+        </member>
+        <member name="P:Cicada.Globalization.ChineseCalendar.WeekText">
+            <summary>
+            获取星期几
+            </summary>
+        </member>
+        <member name="P:Cicada.Globalization.ChineseCalendar.SexagenaryYear">
+            <summary>
+            获取甲子年份
+            </summary>
+        </member>
+        <member name="P:Cicada.Globalization.ChineseCalendar.SexagenaryYearText">
+            <summary>
+            获取甲子年份中文名称
+            </summary>
+        </member>
+        <member name="P:Cicada.Globalization.ChineseCalendar.Holidays">
+            <summary>
+            节假日
+            </summary>
+        </member>
+        <member name="P:Cicada.Globalization.ChineseCalendar.SolarTerm">
+            <summary>
+            获取二十四节气
+            </summary>
+        </member>
+        <member name="P:Cicada.Globalization.ChineseCalendar.SolarTermText">
+            <summary>
+            获取二十四节气
+            </summary>
+        </member>
+        <member name="T:Cicada.Globalization.HolidayBase">
+            <summary>
+            假期基类
+            </summary>
+        </member>
+        <member name="P:Cicada.Globalization.HolidayBase.Sort">
+            <summary>
+            假期定义的类别
+            </summary>
+        </member>
+        <member name="P:Cicada.Globalization.HolidayBase.Type">
+            <summary>
+            已定义假期类型
+            </summary>
+        </member>
+        <member name="P:Cicada.Globalization.HolidayBase.Name">
+            <summary>
+            假期名称
+            </summary>
+        </member>
+        <member name="P:Cicada.Globalization.HolidayBase.IsRecess">
+            <summary>
+            是否法定休息日
+            </summary>
+        </member>
+        <member name="T:Cicada.Globalization.HolidaySort">
+            <summary>
+            假期定义的类别
+            </summary>
+        </member>
+        <member name="F:Cicada.Globalization.HolidaySort.Solar">
+            <summary>
+            阳历
+            </summary>
+        </member>
+        <member name="F:Cicada.Globalization.HolidaySort.Lunar">
+            <summary>
+            阴历
+            </summary>
+        </member>
+        <member name="F:Cicada.Globalization.HolidaySort.Week">
+            <summary>
+            某月第几个星期的星期几
+            </summary>
+        </member>
+        <member name="T:Cicada.Globalization.KnownHoliday">
+            <summary>
+            已定义假期
+            </summary>
+        </member>
+        <member name="F:Cicada.Globalization.KnownHoliday.Undefined">
+            <summary>
+            未定义
+            </summary>
+        </member>
+        <member name="F:Cicada.Globalization.KnownHoliday.YuanDan">
+            <summary>
+            元旦
+            </summary>
+        </member>
+        <member name="F:Cicada.Globalization.KnownHoliday.LaoDong">
+            <summary>
+            劳动节
+            </summary>
+        </member>
+        <member name="F:Cicada.Globalization.KnownHoliday.GuoQing">
+            <summary>
+            国庆节
+            </summary>
+        </member>
+        <member name="F:Cicada.Globalization.KnownHoliday.ChunJie">
+            <summary>
+            春节
+            </summary>
+        </member>
+        <member name="T:Cicada.Globalization.LunarHoliday">
+            <summary>
+            按阴历计算的假期
+            </summary>
+        </member>
+        <member name="M:Cicada.Globalization.LunarHoliday.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Cicada.Globalization.LunarHoliday.#ctor(System.Int32,System.Int32,System.Boolean,System.String,Cicada.Globalization.KnownHoliday)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="month">阴历月</param>
+            <param name="day">阴历日</param>
+            <param name="recess">是否法定节假日</param>
+            <param name="name">节日名称</param>
+            <param name="type">节日类型</param>
+        </member>
+        <member name="P:Cicada.Globalization.LunarHoliday.Month">
+            <summary>
+            阴历月
+            </summary>
+        </member>
+        <member name="P:Cicada.Globalization.LunarHoliday.Day">
+            <summary>
+            阴历日
+            </summary>
+        </member>
+        <member name="T:Cicada.Globalization.SolarHoliday">
+            <summary>
+            按阳历计算的假期
+            </summary>
+        </member>
+        <member name="M:Cicada.Globalization.SolarHoliday.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Cicada.Globalization.SolarHoliday.#ctor(System.Int32,System.Int32,System.Boolean,System.String,Cicada.Globalization.KnownHoliday)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="month">阳历月</param>
+            <param name="day">阳历日</param>
+            <param name="recess">是否法定假期</param>
+            <param name="name">节日名称</param>
+            <param name="type">节日类型</param>
+        </member>
+        <member name="P:Cicada.Globalization.SolarHoliday.Month">
+            <summary>
+            阳历月
+            </summary>
+        </member>
+        <member name="P:Cicada.Globalization.SolarHoliday.Day">
+            <summary>
+            阳历日
+            </summary>
+        </member>
+        <member name="T:Cicada.Globalization.WeekHoliday">
+            <summary>
+            按某月第几个星期的星期几计算的假期
+            </summary>
+        </member>
+        <member name="M:Cicada.Globalization.WeekHoliday.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Cicada.Globalization.WeekHoliday.#ctor(System.Int32,System.Int32,System.Int32,System.Boolean,System.String,Cicada.Globalization.KnownHoliday)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="month">某一个月</param>
+            <param name="week">本月第几周</param>
+            <param name="day">本周星期几</param>
+            <param name="recess">是否法定节假日</param>
+            <param name="name">节日名称</param>
+            <param name="type">节日类型</param>
+        </member>
+        <member name="P:Cicada.Globalization.WeekHoliday.Month">
+            <summary>
+            某一个月
+            </summary>
+        </member>
+        <member name="P:Cicada.Globalization.WeekHoliday.WeekAtMonth">
+            <summary>
+            本月第几周
+            </summary>
+        </member>
+        <member name="P:Cicada.Globalization.WeekHoliday.DayOfWeek">
+            <summary>
+            本周星期几
+            </summary>
+        </member>
+        <member name="T:Cicada.Core.RandomString">
+            <summary>
+            随机字符串生成器,包括随机生成汉字，字母和数字
+            </summary>
+        </member>
+        <member name="M:Cicada.Core.RandomString.#ctor(Cicada.Core.CharsScope,System.Int32)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="scope">可选取的字符范围</param>
+            <param name="length">随机字符串的长度</param>
+        </member>
+        <member name="M:Cicada.Core.RandomString.#ctor(System.Char[],System.Int32)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="scope">可选取的字符范围</param>
+            <param name="length">随机字符串的长度</param>
+        </member>
+        <member name="M:Cicada.Core.RandomString.Next(Cicada.Core.CharsScope,System.Int32)">
+            <summary> 
+            获得随机字符串 
+            </summary>
+            <param name="scope">可选取的字符范围</param>
+            <param name="length">生成随机String的长度</param>
+            <returns>返回随机字符串</returns>
+        </member>
+        <member name="M:Cicada.Core.RandomString.Next(System.Char[],System.Int32)">
+            <summary>
+            获得随机字符串 
+            </summary>
+            <param name="scope">可选取的字符范围</param>
+            <param name="length">生成随机String的长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.RandomString.Next">
+            <summary>
+            获得随机字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Cicada.Core.RandomString.Scope">
+            <summary>
+            获取或设置可选取的字符范围
+            </summary>
+        </member>
+        <member name="P:Cicada.Core.RandomString.Length">
+            <summary> 
+            获取或设置随机String的长度 
+            </summary>
+        </member>
+        <member name="T:Cicada.Core.RandomUtil">
+            <summary>
+            随机数生成类
+            </summary>
+        </member>
+        <member name="M:Cicada.Core.RandomUtil.GetRandom">
+            <summary>
+            获得随机数生成器
+            以Guid的哈希值为种子值，避免大并发随机数重复的问题
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.RandomUtil.GetRandomNext(System.Int32,System.Int32)">
+            <summary>
+            返回一个定义范围的随机数
+            </summary>
+            <param name="minValue">最小值(包含下限)</param>
+            <param name="maxValue">最大值(不包含上限)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.RandomUtil.GetRandomNext(System.Int32)">
+            <summary>
+            返回一个小于指定最大值的非负随机数
+            </summary>
+            <param name="maxValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.RandomUtil.GetRandomNext">
+            <summary>
+            返回非负随机数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Cicada.Security.RsaCrypto">
+            <summary>
+            非对称加密RSA辅助类
+            </summary>
+        </member>
+        <member name="M:Cicada.Security.RsaCrypto.BuildByContainerName(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="keyContainerName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.RsaCrypto.BuildByXmlString(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="xmlStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.RsaCrypto.Encrypt(System.Byte[])">
+            <summary>
+            
+            </summary>
+            <param name="rgb"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.RsaCrypto.Decrypt(System.Byte[])">
+            <summary>
+            
+            </summary>
+            <param name="rgb"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.RsaCrypto.SignData(System.Byte[],System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="buffer"></param>
+            <param name="halg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.RsaCrypto.SignHash(System.Byte[],System.String)">
+            <summary>
+            
+            </summary>
+            <param name="rgbHash"></param>
+            <param name="hashName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.RsaCrypto.VerifyData(System.Byte[],System.Object,System.Byte[])">
+            <summary>
+            
+            </summary>
+            <param name="buffer"></param>
+            <param name="halg"></param>
+            <param name="signature"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.RsaCrypto.VerifyHash(System.Byte[],System.String,System.Byte[])">
+            <summary>
+            
+            </summary>
+            <param name="rgbHash"></param>
+            <param name="hashName"></param>
+            <param name="rgbSignature"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Cicada.Security.RsaCrypto.Provider">
+            <summary>
+            CSP提供的RSA加密提供程序
+            </summary>
+        </member>
+        <member name="T:Cicada.Security.HashCrypto">
+            <summary>
+            Hash算法基类
+            </summary>
+        </member>
+        <member name="M:Cicada.Security.HashCrypto.#ctor(Cicada.Security.HashMode,System.Text.Encoding)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="mode">Hash类型</param>
+            <param name="encoding">字符集</param>
+        </member>
+        <member name="M:Cicada.Security.HashCrypto.#ctor(Cicada.Security.HashMode)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="mode">Hash类型</param>
+        </member>
+        <member name="M:Cicada.Security.HashCrypto.Hash(System.Byte[])">
+            <summary>
+            计算指定字节数组的哈希值
+            </summary>
+            <param name="source">字节数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.HashCrypto.Verify(System.Byte[],System.Byte[])">
+            <summary>
+            验证哈希值
+            </summary>
+            <param name="source">字节数组</param>
+            <param name="hash">哈希值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.HashCrypto.Hash(System.String)">
+            <summary>
+            计算指定字符串的哈希值
+            注意：
+                不同的需求需要不同的Hash转换方式，此处只实现默认的一种。
+                此方法的实现为：使用指定的字符集获得字节数组并计算出哈希值，然后把哈希字节数组转换为16进制字符串表示。
+                等同于：FormsAuthentication.HashPasswordForStoringInConfigFile(source, "XXX")
+            </summary>
+            <param name="source">字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.HashCrypto.Verify(System.String,System.String,System.Boolean)">
+            <summary>
+             验证哈希字符串
+             注意：此处使用默认哈希字符串方法对源字符串进行哈希计算
+            </summary>
+            <param name="source">源字符串</param>
+            <param name="hash">哈希值字符串</param>
+            <param name="ignoreCase">是否忽略大小写</param>
+            <returns></returns>
+        </member>
+        <member name="P:Cicada.Security.HashCrypto.Provider">
+            <summary>
+            加密Hash算法类
+            </summary>
+        </member>
+        <member name="P:Cicada.Security.HashCrypto.Encoding">
+            <summary>
+            字符集
+            </summary>
+        </member>
+        <member name="T:Cicada.Security.HashMode">
+            <summary>
+            哈希类型
+            </summary>
+        </member>
+        <member name="F:Cicada.Security.HashMode.Md5">
+            <summary>
+            MD5
+            </summary>
+        </member>
+        <member name="F:Cicada.Security.HashMode.Sha1">
+            <summary>
+            SHA1
+            </summary>
+        </member>
+        <member name="F:Cicada.Security.HashMode.Sha256">
+            <summary>
+            SHA256
+            </summary>
+        </member>
+        <member name="T:Cicada.Security.Md5Crypto">
+            <summary>
+            MD5哈希算法类
+            </summary>
+        </member>
+        <member name="M:Cicada.Security.Md5Crypto.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Cicada.Security.Md5Crypto.#ctor(System.Text.Encoding)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="encoding">字符集</param>
+        </member>
+        <member name="M:Cicada.Security.Md5Crypto.Hash(System.Byte[])">
+            <summary>
+            计算指定字节数组的哈希值
+            </summary>
+            <param name="source">字节数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.Md5Crypto.Verify(System.Byte[],System.Byte[])">
+            <summary>
+            验证哈希值
+            </summary>
+            <param name="source">字节数组</param>
+            <param name="hash">哈希值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.Md5Crypto.Hash(System.String)">
+            <summary>
+            计算指定字符串的哈希值
+            注意：
+                不同的需求需要不同的Hash转换方式，此处只实现默认的一种。
+                此方法的实现为：使用UTF8字符集获得字节数组并计算出哈希值，然后把哈希字节数组转换为16进制字符串表示。
+                等同于：FormsAuthentication.HashPasswordForStoringInConfigFile(source, "MD5")
+            </summary>
+            <param name="source">字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.Md5Crypto.Hash(System.String,System.Text.Encoding)">
+            <summary>
+            计算指定字符串的哈希值
+            注意：
+                不同的需求需要不同的Hash转换方式，此处只实现默认的一种。
+                此方法的实现为：使用指定的字符集获得字节数组并计算出哈希值，然后把哈希字节数组转换为16进制字符串表示。
+                等同于：FormsAuthentication.HashPasswordForStoringInConfigFile(source, "MD5")
+            </summary>
+            <param name="source">字符串</param>
+            <param name="encoding">字符集</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.Md5Crypto.Verify(System.String,System.String,System.Boolean)">
+            <summary>
+             验证哈希字符串
+             注意：此处使用默认哈希字符串方法对源字符串进行哈希计算
+            </summary>
+            <param name="source">源字符串</param>
+            <param name="hash">哈希值字符串</param>
+            <param name="ignoreCase">是否忽略大小写</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.Md5Crypto.Verify(System.String,System.Text.Encoding,System.String,System.Boolean)">
+            <summary>
+             验证哈希字符串
+             注意：此处使用默认哈希字符串方法对源字符串进行哈希计算
+            </summary>
+            <param name="source">源字符串</param>
+            <param name="encoding">字符集</param>
+            <param name="hash">哈希值字符串</param>
+            <param name="ignoreCase">是否忽略大小写</param>
+        </member>
+        <member name="T:Cicada.Security.Sha1Crypto">
+            <summary>
+            SHA1哈希算法类
+            </summary>
+        </member>
+        <member name="M:Cicada.Security.Sha1Crypto.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Cicada.Security.Sha1Crypto.#ctor(System.Text.Encoding)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="encoding">字符集</param>
+        </member>
+        <member name="M:Cicada.Security.Sha1Crypto.Hash(System.Byte[])">
+            <summary>
+            计算指定字节数组的哈希值
+            </summary>
+            <param name="source">字节数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.Sha1Crypto.Verify(System.Byte[],System.Byte[])">
+            <summary>
+            验证哈希值
+            </summary>
+            <param name="source">字节数组</param>
+            <param name="hash">哈希值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.Sha1Crypto.Hash(System.String)">
+            <summary>
+            计算指定字符串的哈希值
+            注意：
+                不同的需求需要不同的Hash转换方式，此处只实现默认的一种。
+                此方法的实现为：使用UTF8字符集获得字节数组并计算出哈希值，然后把哈希字节数组转换为16进制字符串表示。
+                等同于：FormsAuthentication.HashPasswordForStoringInConfigFile(source, "SHA1")
+            </summary>
+            <param name="source">字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.Sha1Crypto.Hash(System.String,System.Text.Encoding)">
+            <summary>
+            计算指定字符串的哈希值
+            注意：
+                不同的需求需要不同的Hash转换方式，此处只实现默认的一种。
+                此方法的实现为：使用指定的字符集获得字节数组并计算出哈希值，然后把哈希字节数组转换为16进制字符串表示。
+                等同于：FormsAuthentication.HashPasswordForStoringInConfigFile(source, "SHA1")
+            </summary>
+            <param name="source">字符串</param>
+            <param name="encoding">字符集</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.Sha1Crypto.Verify(System.String,System.String,System.Boolean)">
+            <summary>
+             验证哈希字符串
+             注意：此处使用默认哈希字符串方法对源字符串进行哈希计算
+            </summary>
+            <param name="source">源字符串</param>
+            <param name="hash">哈希值字符串</param>
+            <param name="ignoreCase">是否忽略大小写</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.Sha1Crypto.Verify(System.String,System.Text.Encoding,System.String,System.Boolean)">
+            <summary>
+             验证哈希字符串
+             注意：此处使用默认哈希字符串方法对源字符串进行哈希计算
+            </summary>
+            <param name="source">源字符串</param>
+            <param name="encoding">字符集</param>
+            <param name="hash">哈希值字符串</param>
+            <param name="ignoreCase">是否忽略大小写</param>
+        </member>
+        <member name="T:Cicada.Security.Sha256Crypto">
+            <summary>
+            SHA256哈希算法类
+            </summary>
+        </member>
+        <member name="M:Cicada.Security.Sha256Crypto.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Cicada.Security.Sha256Crypto.#ctor(System.Text.Encoding)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="encoding">字符集</param>
+        </member>
+        <member name="M:Cicada.Security.Sha256Crypto.Hash(System.Byte[])">
+            <summary>
+            计算指定字节数组的哈希值
+            </summary>
+            <param name="source">字节数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.Sha256Crypto.Verify(System.Byte[],System.Byte[])">
+            <summary>
+            验证哈希值
+            </summary>
+            <param name="source">字节数组</param>
+            <param name="hash">哈希值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.Sha256Crypto.Hash(System.String)">
+            <summary>
+            计算指定字符串的哈希值
+            注意：
+                不同的需求需要不同的Hash转换方式，此处只实现默认的一种。
+                此方法的实现为：使用UTF8字符集获得字节数组并计算出哈希值，然后把哈希字节数组转换为16进制字符串表示。
+                等同于：FormsAuthentication.HashPasswordForStoringInConfigFile(source, "SHA256")
+            </summary>
+            <param name="source">字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.Sha256Crypto.Hash(System.String,System.Text.Encoding)">
+            <summary>
+            计算指定字符串的哈希值
+            注意：
+                不同的需求需要不同的Hash转换方式，此处只实现默认的一种。
+                此方法的实现为：使用指定的字符集获得字节数组并计算出哈希值，然后把哈希字节数组转换为16进制字符串表示。
+                等同于：FormsAuthentication.HashPasswordForStoringInConfigFile(source, "SHA256")
+            </summary>
+            <param name="source">字符串</param>
+            <param name="encoding">字符集</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.Sha256Crypto.Verify(System.String,System.String,System.Boolean)">
+            <summary>
+             验证哈希字符串
+             注意：此处使用默认哈希字符串方法对源字符串进行哈希计算
+            </summary>
+            <param name="source">源字符串</param>
+            <param name="hash">哈希值字符串</param>
+            <param name="ignoreCase">是否忽略大小写</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.Sha256Crypto.Verify(System.String,System.Text.Encoding,System.String,System.Boolean)">
+            <summary>
+             验证哈希字符串
+             注意：此处使用默认哈希字符串方法对源字符串进行哈希计算
+            </summary>
+            <param name="source">源字符串</param>
+            <param name="encoding">字符集</param>
+            <param name="hash">哈希值字符串</param>
+            <param name="ignoreCase">是否忽略大小写</param>
+        </member>
+        <member name="T:Cicada.Security.DesCrypto">
+            <summary>
+            对称加密 DES加密解密类(密钥长度8byte)
+            </summary>
+        </member>
+        <member name="T:Cicada.Security.SymmetricCrypto">
+            <summary>
+            对称加密类
+            支持DES, Rijndael, RC2, TripleDES
+            </summary>
+        </member>
+        <member name="M:Cicada.Security.SymmetricCrypto.#ctor(Cicada.Security.SymmetricMode,System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="mode">对称加密算法类型</param>
+            <param name="key">密钥，DES（8byte） TripleDES（16byte或24Byte） RC2（5Byte-16Byte）Rijndael（128byte，192byte或者256byte）</param>
+        </member>
+        <member name="M:Cicada.Security.SymmetricCrypto.#ctor(Cicada.Security.SymmetricMode,System.String,System.Text.Encoding)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="mode">对称加密算法类型</param>
+            <param name="key">密钥，DES（8byte） TripleDES（16byte或24Byte） RC2（5Byte-16Byte）Rijndael（128byte，192byte或者256byte）</param>
+            <param name="encoding">字符集</param>
+        </member>
+        <member name="M:Cicada.Security.SymmetricCrypto.#ctor(Cicada.Security.SymmetricMode,System.Byte[])">
+            <summary>
+            构造函数
+            </summary>
+            <param name="mode">对称加密算法类型</param>
+            <param name="key">密钥，DES（8byte） TripleDES（16byte或24Byte） RC2（5Byte-16Byte）Rijndael（128byte，192byte或者256byte）</param>
+        </member>
+        <member name="M:Cicada.Security.SymmetricCrypto.#ctor(Cicada.Security.SymmetricMode,System.Byte[],System.Text.Encoding)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="mode">对称加密算法类型</param>
+            <param name="key">密钥，DES（8byte） TripleDES（16byte或24Byte） RC2（5Byte-16Byte）Rijndael（128byte，192byte或者256byte）</param>
+            <param name="encoding">字符集</param>
+        </member>
+        <member name="M:Cicada.Security.SymmetricCrypto.Encrypt(System.Byte[])">
+            <summary>
+            加密字节数组
+            </summary>
+            <param name="clearBytes">字节数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.SymmetricCrypto.Encrypt(System.String)">
+            <summary>
+            加密字符串
+            </summary>
+            <param name="clearText">明文</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.SymmetricCrypto.Decrypt(System.Byte[])">
+            <summary>
+            解密字节数组
+            </summary>
+            <param name="cipherBytes">密文字节数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.SymmetricCrypto.Decrypt(System.String)">
+            <summary>
+            解密字符串
+            </summary>
+            <param name="cipherText">密文</param>
+            <returns></returns>
+        </member>
+        <member name="P:Cicada.Security.SymmetricCrypto.Encoding">
+            <summary>
+            获取或设置字符集
+            </summary>
+        </member>
+        <member name="P:Cicada.Security.SymmetricCrypto.Key">
+            <summary>
+            获取或设置密钥
+            </summary>
+        </member>
+        <member name="P:Cicada.Security.SymmetricCrypto.Iv">
+            <summary>
+            获取或设置初始化向量
+            </summary>
+        </member>
+        <member name="P:Cicada.Security.SymmetricCrypto.Mode">
+            <summary>
+            获取或设置运算模式
+            </summary>
+        </member>
+        <member name="P:Cicada.Security.SymmetricCrypto.Padding">
+            <summary>
+            获取或设置填充模式
+            </summary>
+        </member>
+        <member name="M:Cicada.Security.DesCrypto.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="key">密钥(8byte)</param>
+        </member>
+        <member name="M:Cicada.Security.DesCrypto.#ctor(System.String,System.Text.Encoding)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="key">密钥(8byte)</param>
+            <param name="encoding">字符集</param>
+        </member>
+        <member name="M:Cicada.Security.DesCrypto.#ctor(System.Byte[])">
+            <summary>
+            构造函数
+            </summary>
+            <param name="key">密钥(8byte)</param>
+        </member>
+        <member name="M:Cicada.Security.DesCrypto.#ctor(System.Byte[],System.Text.Encoding)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="key">密钥(8byte)</param>
+            <param name="encoding">字符集</param>
+        </member>
+        <member name="M:Cicada.Security.DesCrypto.Encrypt(System.Byte[],System.String)">
+            <summary>
+            加密字节数组
+            </summary>
+            <param name="clearBytes">明文字节数组</param>
+            <param name="key">密钥(8byte)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.DesCrypto.Encrypt(System.String,System.String,System.Text.Encoding)">
+            <summary>
+            加密字符串
+            </summary>
+            <param name="clearText">明文</param>
+            <param name="key">密钥(8byte)</param>
+            <param name="encoding">字符集</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.DesCrypto.Encrypt(System.String,System.String)">
+            <summary>
+            加密字符串
+            </summary>
+            <param name="clearText">明文</param>
+            <param name="key">密钥(8byte)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.DesCrypto.Decrypt(System.Byte[],System.String)">
+            <summary>
+            解密字节数组
+            </summary>
+            <param name="cipherBytes">密文字节数组</param>
+            <param name="key">密钥(8byte)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.DesCrypto.Decrypt(System.String,System.String,System.Text.Encoding)">
+            <summary>
+            解密字符串
+            </summary>
+            <param name="cipherText">密文</param>
+            <param name="key">密钥(8byte)</param>
+            <param name="encoding">字符集</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.DesCrypto.Decrypt(System.String,System.String)">
+            <summary>
+            解密字符串
+            </summary>
+            <param name="cipherText">密文</param>
+            <param name="key">密钥(8byte)</param>
+            <returns></returns>
+        </member>
+        <member name="T:Cicada.Security.Rc2Crypto">
+            <summary>
+            对称加密 RC2加密解密类(密钥长度5byte-16byte)
+            </summary>
+        </member>
+        <member name="M:Cicada.Security.Rc2Crypto.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="key">密钥(5byte-16byte)</param>
+        </member>
+        <member name="M:Cicada.Security.Rc2Crypto.#ctor(System.String,System.Text.Encoding)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="key">密钥(5byte-16byte)</param>
+            <param name="encoding">字符集</param>
+        </member>
+        <member name="M:Cicada.Security.Rc2Crypto.#ctor(System.Byte[])">
+            <summary>
+            构造函数
+            </summary>
+            <param name="key">密钥(5byte-16byte)</param>
+        </member>
+        <member name="M:Cicada.Security.Rc2Crypto.#ctor(System.Byte[],System.Text.Encoding)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="key">密钥(5byte-16byte)</param>
+            <param name="encoding">字符集</param>
+        </member>
+        <member name="M:Cicada.Security.Rc2Crypto.Encrypt(System.Byte[],System.String)">
+            <summary>
+            加密字节数组
+            </summary>
+            <param name="clearBytes">明文字节数组</param>
+            <param name="key">密钥(5byte-16byte)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.Rc2Crypto.Encrypt(System.String,System.String,System.Text.Encoding)">
+            <summary>
+            加密字符串
+            </summary>
+            <param name="clearText">明文</param>
+            <param name="key">密钥(5byte-16byte)</param>
+            <param name="encoding">字符集</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.Rc2Crypto.Encrypt(System.String,System.String)">
+            <summary>
+            加密字符串
+            </summary>
+            <param name="clearText">明文</param>
+            <param name="key">密钥(5byte-16byte)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.Rc2Crypto.Decrypt(System.Byte[],System.String)">
+            <summary>
+            解密字节数组
+            </summary>
+            <param name="cipherBytes">密文字节数组</param>
+            <param name="key">密钥(5byte-16byte)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.Rc2Crypto.Decrypt(System.String,System.String,System.Text.Encoding)">
+            <summary>
+            解密字符串
+            </summary>
+            <param name="cipherText">密文</param>
+            <param name="key">密钥(5byte-16byte)</param>
+            <param name="encoding">字符集</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.Rc2Crypto.Decrypt(System.String,System.String)">
+            <summary>
+            解密字符串
+            </summary>
+            <param name="cipherText">密文</param>
+            <param name="key">密钥(5byte-16byte)</param>
+            <returns></returns>
+        </member>
+        <member name="T:Cicada.Security.RijndaelCrypto">
+            <summary>
+            对称加密 Rijndael（AES算法）加密解密类(密钥长度16byte，24byte或者32byte)
+            </summary>
+        </member>
+        <member name="M:Cicada.Security.RijndaelCrypto.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="key">密钥(16byte，24byte或者32byte)</param>
+        </member>
+        <member name="M:Cicada.Security.RijndaelCrypto.#ctor(System.String,System.Text.Encoding)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="key">密钥(16byte，24byte或者32byte)</param>
+            <param name="encoding">字符集</param>
+        </member>
+        <member name="M:Cicada.Security.RijndaelCrypto.#ctor(System.Byte[])">
+            <summary>
+            构造函数
+            </summary>
+            <param name="key">密钥(16byte，24byte或者32byte)</param>
+        </member>
+        <member name="M:Cicada.Security.RijndaelCrypto.#ctor(System.Byte[],System.Text.Encoding)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="key">密钥(16byte，24byte或者32byte)</param>
+            <param name="encoding">字符集</param>
+        </member>
+        <member name="M:Cicada.Security.RijndaelCrypto.Encrypt(System.Byte[],System.String)">
+            <summary>
+            加密字节数组
+            </summary>
+            <param name="clearBytes">明文字节数组</param>
+            <param name="key">密钥(16byte，24byte或者32byte)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.RijndaelCrypto.Encrypt(System.String,System.String,System.Text.Encoding)">
+            <summary>
+            加密字符串
+            </summary>
+            <param name="clearText">明文</param>
+            <param name="key">密钥(16byte，24byte或者32byte)</param>
+            <param name="encoding">字符集</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.RijndaelCrypto.Encrypt(System.String,System.String)">
+            <summary>
+            加密字符串
+            </summary>
+            <param name="clearText">明文</param>
+            <param name="key">密钥(16byte，24byte或者32byte)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.RijndaelCrypto.Decrypt(System.Byte[],System.String)">
+            <summary>
+            解密字节数组
+            </summary>
+            <param name="cipherBytes">密文字节数组</param>
+            <param name="key">密钥(16byte，24byte或者32byte)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.RijndaelCrypto.Decrypt(System.String,System.String,System.Text.Encoding)">
+            <summary>
+            解密字符串
+            </summary>
+            <param name="cipherText">密文</param>
+            <param name="key">密钥(16byte，24byte或者32byte)</param>
+            <param name="encoding">字符集</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.RijndaelCrypto.Decrypt(System.String,System.String)">
+            <summary>
+            解密字符串
+            </summary>
+            <param name="cipherText">密文</param>
+            <param name="key">密钥(16byte，24byte或者32byte)</param>
+            <returns></returns>
+        </member>
+        <member name="T:Cicada.Security.SymmetricMode">
+            <summary>
+            对称加密类型
+            </summary>
+        </member>
+        <member name="F:Cicada.Security.SymmetricMode.Des">
+            <summary>
+            DES（密钥长度8byte）
+            </summary>
+        </member>
+        <member name="F:Cicada.Security.SymmetricMode.TripleDes">
+            <summary>
+             TripleDES（密钥长度16byte或24Byte）
+            </summary>
+        </member>
+        <member name="F:Cicada.Security.SymmetricMode.Rc2">
+            <summary>
+             RC2（密钥长度5byte-16byte）
+            </summary>
+        </member>
+        <member name="F:Cicada.Security.SymmetricMode.Rijndael">
+            <summary>
+            Rijndael（AES算法）（密钥长度16byte，24byte或者32byte）
+            </summary>
+        </member>
+        <member name="T:Cicada.Security.TripleDesCrypto">
+            <summary>
+            对称加密 TripleDES加密解密类(密钥长度16byte或24byte)
+            </summary>
+        </member>
+        <member name="M:Cicada.Security.TripleDesCrypto.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="key">密钥(16byte或24byte)</param>
+        </member>
+        <member name="M:Cicada.Security.TripleDesCrypto.#ctor(System.String,System.Text.Encoding)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="key">密钥(16byte或24byte)</param>
+            <param name="encoding">字符集</param>
+        </member>
+        <member name="M:Cicada.Security.TripleDesCrypto.#ctor(System.Byte[])">
+            <summary>
+            构造函数
+            </summary>
+            <param name="key">密钥(16byte或24byte)</param>
+        </member>
+        <member name="M:Cicada.Security.TripleDesCrypto.#ctor(System.Byte[],System.Text.Encoding)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="key">密钥(16byte或24byte)</param>
+            <param name="encoding">字符集</param>
+        </member>
+        <member name="M:Cicada.Security.TripleDesCrypto.Encrypt(System.Byte[],System.String)">
+            <summary>
+            加密字节数组
+            </summary>
+            <param name="clearBytes">明文字节数组</param>
+            <param name="key">密钥(16byte或24byte)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.TripleDesCrypto.Encrypt(System.String,System.String,System.Text.Encoding)">
+            <summary>
+            加密字符串
+            </summary>
+            <param name="clearText">明文</param>
+            <param name="key">密钥(16byte或24byte)</param>
+            <param name="encoding">字符集</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.TripleDesCrypto.Encrypt(System.String,System.String)">
+            <summary>
+            加密字符串
+            </summary>
+            <param name="clearText">明文</param>
+            <param name="key">密钥(16byte或24byte)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.TripleDesCrypto.Decrypt(System.Byte[],System.String)">
+            <summary>
+            解密字节数组
+            </summary>
+            <param name="cipherBytes">密文字节数组</param>
+            <param name="key">密钥(16byte或24byte)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.TripleDesCrypto.Decrypt(System.String,System.String,System.Text.Encoding)">
+            <summary>
+            解密字符串
+            </summary>
+            <param name="cipherText">密文</param>
+            <param name="key">密钥(16byte或24byte)</param>
+            <param name="encoding">字符集</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Security.TripleDesCrypto.Decrypt(System.String,System.String)">
+            <summary>
+            解密字符串
+            </summary>
+            <param name="cipherText">密文</param>
+            <param name="key">密钥(16byte或24byte)</param>
+            <returns></returns>
+        </member>
+        <member name="T:Cicada.DI.IRegisterTypeBoot">
+            <summary>
+            类型注册接口；该接口的实现类会在系统启动的时候自动执行。
+            </summary>
+        </member>
+        <member name="M:Cicada.DI.IRegisterTypeBoot.RegisterTypes(Cicada.DI.IContainer)">
+            <summary>
+            注册接口与实现类映射关系
+            </summary>
+            <param name="container">依赖注入接口</param>
+        </member>
+        <member name="T:Cicada.Log.DefaultLog">
+            <summary>
+            默认的日志实现
+            </summary>
+        </member>
+        <member name="T:Cicada.Log.ILog">
+            <summary>
+            日志接口
+            </summary>
+        </member>
+        <member name="M:Cicada.Log.ILog.Trace(System.String)">
+            <summary>
+            跟踪
+            </summary>
+            <param name="message">消息</param> 
+        </member>
+        <member name="M:Cicada.Log.ILog.Trace(System.String,System.Object[])">
+            <summary>
+            跟踪
+            </summary>
+            <param name="message">消息</param>
+            <param name="args">消息参数</param>
+        </member>
+        <member name="M:Cicada.Log.ILog.Trace(System.Exception)">
+            <summary>
+            跟踪
+            </summary>
+            <param name="ex"></param>
+        </member>
+        <member name="M:Cicada.Log.ILog.Trace(System.Exception,System.String)">
+            <summary>
+            跟踪
+            </summary>
+            <param name="ex">异常</param>
+            <param name="message">消息</param>
+        </member>
+        <member name="M:Cicada.Log.ILog.Trace(System.Exception,System.String,System.Object[])">
+            <summary>
+            跟踪
+            </summary>
+            <param name="ex">异常</param>
+            <param name="message">消息</param>
+            <param name="args">消息参数</param>
+        </member>
+        <member name="M:Cicada.Log.ILog.Debug(System.String)">
+            <summary>
+            调试
+            </summary>
+            <param name="message">消息</param>
+        </member>
+        <member name="M:Cicada.Log.ILog.Debug(System.String,System.Object[])">
+            <summary>
+            调试
+            </summary>
+            <param name="message">消息</param>
+            <param name="args">消息参数</param>
+        </member>
+        <member name="M:Cicada.Log.ILog.Debug(System.Exception)">
+            <summary>
+            调试
+            </summary>
+            <param name="ex">异常</param>
+        </member>
+        <member name="M:Cicada.Log.ILog.Debug(System.Exception,System.String)">
+            <summary>
+            调试
+            </summary>
+            <param name="ex">异常</param>
+            <param name="message">消息</param>
+        </member>
+        <member name="M:Cicada.Log.ILog.Debug(System.Exception,System.String,System.Object[])">
+            <summary>
+            调试
+            </summary>
+            <param name="ex">异常</param>
+            <param name="message">消息</param>
+            <param name="args">消息参数</param>
+        </member>
+        <member name="M:Cicada.Log.ILog.Info(System.String)">
+            <summary>
+            信息
+            </summary>
+            <param name="message">消息</param>
+        </member>
+        <member name="M:Cicada.Log.ILog.Info(System.String,System.Object[])">
+            <summary>
+            信息
+            </summary>
+            <param name="message">消息</param>
+            <param name="args">消息参数</param>
+        </member>
+        <member name="M:Cicada.Log.ILog.Info(System.Exception)">
+            <summary>
+            信息
+            </summary>
+            <param name="ex">异常</param>
+        </member>
+        <member name="M:Cicada.Log.ILog.Info(System.Exception,System.String)">
+            <summary>
+            信息
+            </summary>
+            <param name="ex">异常</param>
+            <param name="message">消息</param>
+        </member>
+        <member name="M:Cicada.Log.ILog.Info(System.Exception,System.String,System.Object[])">
+            <summary>
+            信息
+            </summary>
+            <param name="ex">异常</param>
+            <param name="message">消息</param>
+            <param name="args">消息参数</param>
+        </member>
+        <member name="M:Cicada.Log.ILog.Error(System.String)">
+            <summary>
+            错误
+            </summary>
+            <param name="message">消息</param>
+        </member>
+        <member name="M:Cicada.Log.ILog.Error(System.String,System.Object[])">
+            <summary>
+            错误
+            </summary>
+            <param name="message">消息</param>
+            <param name="args">消息参数</param>
+        </member>
+        <member name="M:Cicada.Log.ILog.Error(System.Exception)">
+            <summary>
+            错误
+            </summary>
+            <param name="ex">异常</param>
+        </member>
+        <member name="M:Cicada.Log.ILog.Error(System.Exception,System.String)">
+            <summary>
+            错误
+            </summary>
+            <param name="ex">异常</param>
+            <param name="message">消息</param>
+        </member>
+        <member name="M:Cicada.Log.ILog.Error(System.Exception,System.String,System.Object[])">
+            <summary>
+            错误
+            </summary>
+            <param name="ex">异常</param>
+            <param name="message">消息</param>
+            <param name="args">消息参数</param>
+        </member>
+        <member name="M:Cicada.Log.ILog.Fatal(System.String)">
+            <summary>
+            致命错误
+            </summary>
+            <param name="message">消息</param>
+        </member>
+        <member name="M:Cicada.Log.ILog.Fatal(System.String,System.Object[])">
+            <summary>
+            致命错误
+            </summary>
+            <param name="message">消息</param>
+            <param name="args">消息参数</param>
+        </member>
+        <member name="M:Cicada.Log.ILog.Fatal(System.Exception)">
+            <summary>
+            致命错误
+            </summary>
+            <param name="ex">异常</param>
+        </member>
+        <member name="M:Cicada.Log.ILog.Fatal(System.Exception,System.String)">
+            <summary>
+            致命错误
+            </summary>
+            <param name="ex">异常</param>
+            <param name="message">消息</param>
+        </member>
+        <member name="M:Cicada.Log.ILog.Fatal(System.Exception,System.String,System.Object[])">
+            <summary>
+            致命错误
+            </summary>
+            <param name="ex">异常</param>
+            <param name="message">消息</param>
+            <param name="args">消息参数</param>
+        </member>
+        <member name="T:Cicada.Log.ILogFactory">
+            <summary>
+            日志工厂
+            </summary>
+        </member>
+        <member name="M:Cicada.Log.ILogFactory.Create(System.String)">
+            <summary>
+            创建日志对象
+            </summary>
+            <param name="name">日志名称</param>
+            <returns>日志对象</returns>
+        </member>
+        <member name="T:Cicada.Log.LogExtensions">
+            <summary>
+            日志扩展方法
+            </summary>
+        </member>
+        <member name="M:Cicada.Log.LogExtensions.Exception(Cicada.Log.ILog,System.Action,System.String,System.Object[])">
+            <summary>
+            执行一个方法，当有异常时写入日志
+            </summary>
+            <param name="log">日志接口</param>
+            <param name="action">将要执行的方法</param>
+            <param name="message">消息</param>
+            <param name="args">参数</param>
+        </member>
+        <member name="T:Cicada.Core.TypeFinder">
+            <summary>
+            类查找器
+            </summary>
+        </member>
+        <member name="M:Cicada.Core.TypeFinder.GetTypes">
+            <summary>
+            在当前目录下或者bin子目录下查找指定类型的子类
+            </summary> 
+            <returns>子类列表</returns>
+        </member>
+        <member name="M:Cicada.Core.TypeFinder.GetTypes(System.Type)">
+            <summary>
+            在当前目录下或者bin子目录下查找指定类型的子类
+            </summary>
+            <param name="baseType">基类型</param>
+            <returns>子类列表</returns>
+        </member>
+        <member name="M:Cicada.Core.TypeFinder.GetTypes(System.Reflection.Assembly,System.Type)">
+            <summary>
+            在特定程序集下查找指定类型的子类
+            </summary>
+            <param name="assembly">程序集</param>
+            <param name="baseType">基类型</param>
+            <returns>子类列表</returns>
+        </member>
+        <member name="M:Cicada.Core.TypeFinder.GetTypes(System.String)">
+            <summary>
+            在当前目录下或者bin子目录下查找指定产品标识的所有类型
+            </summary>
+            <param name="productName">产品名称</param>
+            <returns>类型列表</returns>
+        </member>
+        <member name="T:Cicada.ModuleBundle.ModuleArribute">
+            <summary>
+            模块配置标签
+            </summary>
+        </member>
+        <member name="P:Cicada.ModuleBundle.ModuleArribute.Disable">
+            <summary>
+            是否自动装配
+            </summary>
+        </member>
+        <member name="P:Cicada.ModuleBundle.ModuleArribute.Order">
+            <summary>
+            执行顺序，越小越先执行
+            </summary>
+        </member>
+        <member name="T:Cicada.DI.ComponentAttribute">
+            <summary>
+            依赖注入标签
+            </summary>
+        </member>
+        <member name="M:Cicada.DI.ComponentAttribute.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="name">名称</param>
+        </member>
+        <member name="M:Cicada.DI.ComponentAttribute.#ctor(System.Type)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="from">基类型</param>
+        </member>
+        <member name="M:Cicada.DI.ComponentAttribute.#ctor(System.String,System.Type)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="name">名称</param>
+            <param name="from">基类型</param>
+        </member>
+        <member name="M:Cicada.DI.ComponentAttribute.#ctor(System.String,System.Type,Cicada.DI.Lifetime)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="name">名称</param>
+            <param name="from">基类型</param>
+            <param name="lifeTime">生命周期</param>
+        </member>
+        <member name="P:Cicada.DI.ComponentAttribute.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Cicada.DI.ComponentAttribute.From">
+            <summary>
+            基类型
+            </summary>
+        </member>
+        <member name="P:Cicada.DI.ComponentAttribute.Lifetime">
+            <summary>
+            生命周期
+            </summary>
+        </member>
+        <member name="T:Cicada.ModuleBundle.IModuleBoot">
+            <summary>
+            模块配置类；该接口的实现类会在系统启动的时候自动执行。
+            </summary>
+        </member>
+        <member name="M:Cicada.ModuleBundle.IModuleBoot.Execute">
+            <summary>
+            配置模块
+            </summary>
+        </member>
+        <member name="T:Cicada.Core.StringUtil">
+            <summary>
+            字符串操作静态辅助类
+            </summary>
+            <summary>
+             字符集兼容性判断
+            </summary>
+            <summary>
+            转换相关
+            </summary>
+            <summary>
+            字符串转换成其他类型
+            </summary>
+            <summary>
+            字符串验证
+            </summary>
+            <summary>
+            字符串宽度处理
+            </summary>
+        </member>
+        <member name="F:Cicada.Core.StringUtil.NumberChars">
+            <summary>
+            数字字符数组
+            </summary>
+        </member>
+        <member name="F:Cicada.Core.StringUtil.LowerLetterChars">
+            <summary>
+            小写字母字符数组
+            </summary>
+        </member>
+        <member name="F:Cicada.Core.StringUtil.UpperLetterChars">
+            <summary>
+            大写字母字符数组
+            </summary>
+        </member>
+        <member name="F:Cicada.Core.StringUtil.LetterChars">
+            <summary>
+            字母字符数组
+            </summary>
+        </member>
+        <member name="F:Cicada.Core.StringUtil.NumeralRadixChars">
+            <summary>
+            进位制使用的字符，支持64进制以下
+            </summary>
+        </member>
+        <member name="F:Cicada.Core.StringUtil.NumberLetterChars">
+            <summary>
+            数字字母字符数组
+            </summary>
+        </member>
+        <member name="F:Cicada.Core.StringUtil.UsualChineseChars">
+            <summary>
+            300个常用汉字
+            </summary>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.GetCharArray(Cicada.Core.CharsScope)">
+            <summary>
+            获取指定字符选取范围的字符数组
+            </summary>
+            <param name="scope"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.DefaultIfNull(System.String,System.String)">
+            <summary>
+            如果String为Null则使用指定的默认值
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.DefaultIfNullOrEmpty(System.String,System.String)">
+            <summary>
+            如果String为Null或Empty则使用指定的默认值
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ReplaceWhiteSpace(System.String,System.String,System.Boolean)">
+            <summary>
+            替换空白字符
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="newValue">使用此字符串替换空白字符</param>
+            <param name="repeated">如果出现连续的空白字符是否重复替换</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ReplaceWhiteSpace(System.String,System.Char,System.Boolean)">
+            <summary>
+            替换空白字符
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="newChar">使用此字符替换空白字符</param>
+            <param name="repeated">如果出现连续的空白字符是否重复替换</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.TrimStart(System.String,System.String,System.Boolean)">
+            <summary>
+            从当前 System.String 对象移除指定字符的所有前导匹配项
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="start">要删除的起始字符串</param>
+            <param name="ignoreCase">是否忽略大小写</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.TrimEnd(System.String,System.String,System.Boolean)">
+            <summary>
+            从当前 System.String 对象移除指定字符的所有尾部匹配项
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="end">要删除的结束字符串</param>
+            <param name="ignoreCase">是否忽略大小写</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.GetGuidPureString">
+            <summary>
+             返回纯净的GUID字符串（不带'-'字符
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.LevenshteinDistance(System.String,System.String,System.Boolean)">
+            <summary>
+            编辑距离（Levenshtein Distance），计算字符串相似度
+            </summary>
+            <param name="source">源字符串</param>
+            <param name="target">目标字符串</param>
+            <param name="ignoreCase">是否忽略大小写</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.IsAscii(System.String)">
+            <summary>
+            判断字符串是否是ASCII编码
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.IsGb2312(System.String)">
+            <summary>
+            判断是否是兼容GB2312编码(GB2312-1980)
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.IsGbk(System.String)">
+            <summary>
+            判断是否兼容GBK编码（不包括比CP936多的95个字）
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.IsAscii(System.Char)">
+            <summary>
+            判断字符是否是ASCII编码
+            </summary>
+            <param name="chr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.IsGb2312(System.Char)">
+            <summary>
+            判断是否是兼容GB2312编码(GB2312-1980)
+            </summary>
+            <param name="chr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.IsGbk(System.Char)">
+            <summary>
+            判断是否兼容GBK编码（不包括比CP936多的95个字）
+            </summary>
+            <param name="chr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.IsGb18030(System.Char)">
+            <summary>
+            判断是否兼容GB18030编码(GB18030-2000 GB18030-2005)
+            </summary>
+            <param name="chr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToBase64String(System.String,System.Text.Encoding)">
+            <summary>
+            将字符串转换成Base64编码
+            </summary>
+            <param name="str"></param>
+            <param name="encoding"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.FromBase64String(System.String,System.Text.Encoding)">
+            <summary>
+            将Base64编码的字符串还原
+            </summary>
+            <param name="str"></param>
+            <param name="encoding"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.StrToHex(System.String,System.Text.Encoding)">
+            <summary>
+            将字符串转换成为16进制字符串
+            </summary>
+            <param name="str">要转换成16进制表示的字符串</param>
+            <param name="encode">字符编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.HexToBytes(System.String)">
+            <summary>
+            将16进制字符串转换成为字节数组，如果要将byte[]转换成hex字符串，可使用BitConverter.ToString()实现。
+            </summary>
+            <param name="hex">要转换成字节数组的16进制字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.HexToStr(System.String,System.Text.Encoding)">
+            <summary>
+            将16进制字符串转换成为字符编码对应的字符串
+            </summary>
+            <param name="hex">16进制表示的字符串</param>
+            <param name="encode">字符编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.RadixToString(System.UInt64,System.UInt32)">
+            <summary>
+            将十进制整数转换为指定进位制的字符串表示，如进位制位是2，8，10，16，最好使用Convert.ToString(value, toBase)方法
+            </summary>
+            <param name="num">十进制整数</param>
+            <param name="radix">进位制，如：36,62</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.StringToRadix(System.String,System.UInt32)">
+            <summary>
+            将指定进位制的字符串表示转换为十进制整数，如进位制位是2，8，10，16，最好使用Convert.ToXXX(string, fromBase)方法
+            </summary>
+            <param name="value">指定进位制的字符串表示</param>
+            <param name="radix">进位制，如：36,62</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ConvertNumberBase(System.String,System.Int32,System.Int32)">
+            <summary>
+            进位制间相互转换（支持2,8,10,16进制）
+            </summary>
+            <param name="source">源数据</param>
+            <param name="fromBase">源进制， 只能是2，8，10，16</param>
+            <param name="toBase">目标进制， 只能是2，8，10，16</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.To``1(System.String)">
+            <summary>
+            将String转换成公共语言运行时类型。
+            公共语言运行时类型: SByte、Byte、Int16、UInt16、Int32、UInt32、Int64、UInt64、Single、Double、Decimal、Boolean、DateTime、Char、String
+            </summary>
+            <typeparam name="T">目标类型</typeparam>
+            <param name="src">将转换的字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.To``1(System.String,``0)">
+            <summary>
+            将String转换成公共语言运行时类型。如转换失败则使用默认值
+            </summary>
+            <typeparam name="T">目标类型</typeparam>
+            <param name="src">将转换的字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.To``1(System.String,System.IFormatProvider)">
+            <summary>
+            将String转换成公共语言运行时类型。
+            </summary>
+            <typeparam name="T">目标类型</typeparam>
+            <param name="src">将转换的字符串</param>
+            <param name="provider">一个提供区域性特定的格式设置信息的对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.To``1(System.String,``0,System.IFormatProvider)">
+            <summary>
+            将String转换成公共语言运行时类型。如转换失败则使用默认值
+            </summary>
+            <typeparam name="T">目标类型</typeparam>
+            <param name="src">将转换的字符串</param>
+            <param name="defaultValue">默认值</param>
+            <param name="provider">一个提供区域性特定的格式设置信息的对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.To``1(System.String,System.Func{System.String,``0})">
+            <summary>
+            将String转换成指定类型。
+            </summary>
+            <typeparam name="T">目标类型</typeparam>
+            <param name="src">将转换的字符串</param>
+            <param name="converter">自定义转换器</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.To``1(System.String,``0,System.Func{System.String,``0})">
+            <summary>
+            将String转换成指定类型。如转换失败则使用默认值
+            </summary>
+            <typeparam name="T">目标类型</typeparam>
+            <param name="src">将转换的字符串</param>
+            <param name="defaultValue">默认值</param>
+            <param name="converter">自定义转换器</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToN``1(System.String)">
+            <summary>
+            将String转换成可空类型
+            </summary>
+            <typeparam name="T">目标类型</typeparam>
+            <param name="src">将转换的字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToN``1(System.String,System.IFormatProvider)">
+            <summary>
+            将String转换成可空类型
+            </summary>
+            <typeparam name="T">目标类型</typeparam>
+            <param name="src">将转换的字符串</param>
+            <param name="provider">一个提供区域性特定的格式设置信息的对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToN``1(System.String,``0)">
+            <summary>
+            将String转换成可空类型。如转换失败则使用默认值
+            </summary>
+            <typeparam name="T">目标类型</typeparam>
+            <param name="src">将转换的字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToN``1(System.String,``0,System.IFormatProvider)">
+            <summary>
+            将String转换成可空类型。如转换失败则使用默认值
+            </summary>
+            <typeparam name="T">目标类型</typeparam>
+            <param name="src">将转换的字符串</param>
+            <param name="defaultValue">默认值</param>
+            <param name="provider">一个提供区域性特定的格式设置信息的对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToN``1(System.String,System.Func{System.String,``0})">
+            <summary>
+            将String转换成可空类型。
+            </summary>
+            <typeparam name="T">目标类型</typeparam>
+            <param name="src">将转换的字符串</param>
+            <param name="converter">自定义转换器</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToN``1(System.String,``0,System.Func{System.String,``0})">
+            <summary>
+            将String转换成可空类型。如转换失败则使用默认值
+            </summary>
+            <typeparam name="T">目标类型</typeparam>
+            <param name="src">将转换的字符串</param>
+            <param name="defaultValue">默认值</param>
+            <param name="converter">自定义转换器</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToSByte(System.String)">
+            <summary>
+            将String转换成SByte
+            </summary>
+            <param name="src">源字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToSByte(System.String,System.SByte)">
+            <summary>
+            将String转换成SByte，如果转换失败则使用默认值。
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToSByteN(System.String)">
+            <summary>
+            将String转换成可空SByte
+            </summary>
+            <param name="src">源字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToSByteN(System.String,System.SByte)">
+            <summary>
+            将String转换成可空SByte，如果转换失败则使用默认值。
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToByte(System.String)">
+            <summary>
+            将String转换成Byte
+            </summary>
+            <param name="src">源字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToByte(System.String,System.Byte)">
+            <summary>
+            将String转换成Byte，如果转换失败则使用默认值。
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToByteN(System.String)">
+            <summary>
+            将String转换成可空Byte
+            </summary>
+            <param name="src">源字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToByteN(System.String,System.Byte)">
+            <summary>
+             将String转换成可空Byte，如果转换失败则使用默认值。
+             </summary>
+             <param name="src">源字符串</param>
+             <param name="defaultValue">默认值</param>
+             <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToInt16(System.String)">
+            <summary>
+            将String转换成Int16
+            </summary>
+            <param name="src">源字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToInt16(System.String,System.Int16)">
+            <summary>
+            将String转换成Int16，如果转换失败则使用默认值。
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToInt16N(System.String)">
+            <summary>
+            将String转换成可空Int16
+            </summary>
+            <param name="src">源字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToInt16N(System.String,System.Int16)">
+            <summary>
+            将String转换成可空Int16，如果转换失败则使用默认值。
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToUInt16(System.String)">
+            <summary>
+            将String转换成UInt16
+            </summary>
+            <param name="src">源字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToUInt16(System.String,System.UInt16)">
+            <summary>
+            将String转换成UInt16，如果转换失败则使用默认值。
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToUInt16N(System.String)">
+            <summary>
+            将String转换成可空UInt16
+            </summary>
+            <param name="src">源字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToUInt16N(System.String,System.UInt16)">
+            <summary>
+            将String转换成可空UInt16，如果转换失败则使用默认值。
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToInt32(System.String)">
+            <summary>
+            将String转换成Int32
+            </summary>
+            <param name="src">源字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToInt32(System.String,System.Int32)">
+            <summary>
+            将String转换成Int32，如果转换失败则使用默认值。
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToInt32N(System.String)">
+            <summary>
+            将String转换成可空Int32
+            </summary>
+            <param name="src">源字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToInt32N(System.String,System.Int32)">
+            <summary>
+            将String转换成可空Int32，如果转换失败则使用默认值。
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToUInt32(System.String)">
+            <summary>
+            将String转换成UInt32
+            </summary>
+            <param name="src">源字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToUInt32(System.String,System.UInt32)">
+            <summary>
+            将String转换成UInt32，如果转换失败则使用默认值。
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToUInt32N(System.String)">
+            <summary>
+            将String转换成可空UInt32
+            </summary>
+            <param name="src">源字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToUInt32N(System.String,System.UInt32)">
+            <summary>
+            将String转换成可空UInt32，如果转换失败则使用默认值。
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToInt64(System.String)">
+            <summary>
+            将String转换成Int64
+            </summary>
+            <param name="src">源字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToInt64(System.String,System.Int64)">
+            <summary>
+            将String转换成Int64，如果转换失败则使用默认值。
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToInt64N(System.String)">
+            <summary>
+            将String转换成可空Int64
+            </summary>
+            <param name="src">源字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToInt64N(System.String,System.Int64)">
+            <summary>
+            将String转换成可空Int64，如果转换失败则使用默认值。
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToUInt64(System.String)">
+            <summary>
+            将String转换成UInt64
+            </summary>
+            <param name="src">源字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToUInt64(System.String,System.UInt64)">
+            <summary>
+            将String转换成UInt64，如果转换失败则使用默认值。
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToUInt64N(System.String)">
+            <summary>
+            将String转换成可空UInt64
+            </summary>
+            <param name="src">源字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToUInt64N(System.String,System.UInt64)">
+            <summary>
+            将String转换成可空UInt64，如果转换失败则使用默认值。
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToSingle(System.String)">
+            <summary>
+            将String转换成Single
+            </summary>
+            <param name="src">源字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToSingle(System.String,System.Single)">
+            <summary>
+            将String转换成Single，如果转换失败则使用默认值。
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToSingleN(System.String)">
+            <summary>
+            将String转换成可空Single
+            </summary>
+            <param name="src">源字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToSingleN(System.String,System.Single)">
+            <summary>
+            将String转换成可空Single，如果转换失败则使用默认值。
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToDouble(System.String)">
+            <summary>
+            将String转换成Double
+            </summary>
+            <param name="src">源字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToDouble(System.String,System.Double)">
+            <summary>
+            将String转换成Double，如果转换失败则使用默认值。
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToDoubleN(System.String)">
+            <summary>
+            将String转换成可空Double
+            </summary>
+            <param name="src">源字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToDoubleN(System.String,System.Double)">
+            <summary>
+            将String转换成可空Double
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToDecimal(System.String)">
+            <summary>
+            将String转换成Decimal
+            </summary>
+            <param name="src">源字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToDecimal(System.String,System.Decimal)">
+            <summary>
+            将String转换成Decimal，如果转换失败则使用默认值。
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToDecimalN(System.String)">
+            <summary>
+            将String转换成可空Decimal
+            </summary>
+            <param name="src">源字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToDecimalN(System.String,System.Decimal)">
+            <summary>
+            将String转换成可空Decimal，如果转换失败则使用默认值。
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToBoolean(System.String)">
+            <summary>
+            将String转换成Boolean
+            </summary>
+            <param name="src">源字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToBoolean(System.String,System.Boolean)">
+            <summary>
+            将String转换成Boolean，如果转换失败则使用默认值。
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToBooleanN(System.String,System.Boolean)">
+            <summary>
+            将String转换成可空Boolean
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToChar(System.String)">
+            <summary>
+            将String转换成Char
+            </summary>
+            <param name="src">源字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToChar(System.String,System.Char)">
+            <summary>
+            将String转换成Char，如果转换失败则使用默认值。
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToCharN(System.String)">
+            <summary>
+            将String转换成可空Char
+            </summary>
+            <param name="src">源字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToCharN(System.String,System.Char)">
+            <summary>
+            将String转换成可空Char，如果转换失败则使用默认值。
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToDateTime(System.String)">
+            <summary>
+            将String转换成DateTime
+            </summary>
+            <param name="src">源字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToDateTime(System.String,System.DateTime)">
+            <summary>
+            将String转换成DateTime，如果转换失败则使用默认值。
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToDateTimeN(System.String)">
+            <summary>
+            将String转换成可空DateTime
+            </summary>
+            <param name="src">源字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToDateTimeN(System.String,System.DateTime)">
+            <summary>
+            将String转换成可空DateTime，如果转换失败则使用默认值。
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToDateTime(System.String,System.String)">
+            <summary>
+            将String转换成DateTime
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="format">日期格式说明符：yyyyMMdd HH:mm:ss</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToDateTime(System.String,System.String,System.DateTime)">
+            <summary>
+            将String转换成DateTime，如果转换失败则使用默认值。
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="format">日期格式说明符：yyyyMMdd HH:mm:ss</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToDateTimeN(System.String,System.String)">
+            <summary>
+            将String转换成可空DateTime
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="format">日期格式说明符：yyyyMMdd HH:mm:ss</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToDateTimeN(System.String,System.String,System.DateTime)">
+            <summary>
+            将String转换成可空DateTime，如果转换失败则使用默认值。
+            </summary>
+            <param name="src">源字符串</param>
+            <param name="format">日期格式说明符：yyyyMMdd HH:mm:ss</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToEnum``1(System.String)">
+            <summary>
+            将String转换成Enum
+            </summary>
+            <typeparam name="T">Enum类型</typeparam>
+            <param name="src">源字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToEnum``1(System.String,``0)">
+            <summary>
+            将String转换成Enum，如果转换失败则使用默认值。
+            </summary>
+            <typeparam name="T">Enum类型</typeparam>
+            <param name="src">源字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToEnumN``1(System.String)">
+            <summary>
+            将String转换成可空Enum
+            </summary>
+            <typeparam name="T">Enum类型</typeparam>
+            <param name="src">源字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.ToEnumN``1(System.String,``0)">
+            <summary>
+            将String转换成可空Enum，如果转换失败则使用默认值。
+            </summary>
+            <typeparam name="T">Enum类型</typeparam>
+            <param name="src">源字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.IsChineseOrLetterOrNumber(System.String)">
+            <summary>
+            判断字符串是否是由中文汉字,字母或数字组成
+            </summary>
+            <param name="text">字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.IsChinese(System.Char)">
+            <summary>
+            判断是否是中文汉字
+            </summary>
+            <param name="chr">字符</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.IsChinese(System.String)">
+            <summary>
+            判断字符串是否全是中文汉字
+            </summary>
+            <param name="text">字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.IsEmail(System.String)">
+            <summary>
+            验证是否是有效Email地址
+            </summary>
+            <param name="email"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.IsTel(System.String)">
+            <summary>
+            验证是否是有效的电话号码
+            </summary>
+            <param name="tel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.IsPhone(System.String)">
+            <summary>
+            验证是否是有效的手机号码
+            </summary>
+            <param name="phone">手机号</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.IsIpAddress(System.String)">
+            <summary>
+            验证是否是有效的IP地址
+            </summary>
+            <param name="ip"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.IsPostcode(System.String)">
+            <summary>
+            验证是否是有效地邮政编码
+            </summary>
+            <param name="postcode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.IsUrl(System.String)">
+            <summary>
+            验证是否是有效的URL
+            </summary>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.IsNotNegativeNumber(System.String)">
+            <summary>
+            验证是否是非负数，包括正数和0
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.IsNumber(System.String)">
+            <summary>
+            验证是否是数字
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.IsNotNegativeInteger(System.String)">
+            <summary>
+            验证是否是非负整数，包括正整数和0
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.IsInteger(System.String)">
+            <summary>
+            验证是否是整数
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.IsNegativeInteger(System.String)">
+            <summary>
+            验证是否是负整数
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.IsPositiveInteger(System.String)">
+            <summary>
+            验证是否是正整数
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.IsNotPositiveInteger(System.String)">
+            <summary>
+            验证是否是非正整数，包括负整数和0
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.GetStrWidth(System.String)">
+            <summary>
+            获取字符串的实际宽度
+            全角符号汉字等占2个宽度
+            </summary>
+            <param name="str">字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.GetCharWidth(System.Char)">
+            <summary>
+            获取字符的实际宽度
+            全角符号汉字等占2个宽度
+            </summary>
+            <param name="chr">字符</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cicada.Core.StringUtil.FixWidth(System.String,System.Int32,System.String)">
+            <summary>
+            修饰字符串宽度
+            不足宽度不处理，超过的截取
+            常用于新闻标题的显示
+            </summary>
+            <param name="str">字符串</param>
+            <param name="width">指定宽度，全角符号汉字等占2个宽度</param>
+            <param name="sufix">后缀</param>
+            <returns></returns>
+        </member>
+        <member name="P:Cicada.Core.StringUtil.NumeralRadixCache">
+            <summary>
+            进位制使用的字符对应的值
+            </summary>
+        </member>
+        <member name="T:Cicada.Core.CharsScope">
+            <summary>
+            可选取的字符范围，字符定义在StringUtil类中
+            </summary>
+        </member>
+        <member name="F:Cicada.Core.CharsScope.Numbers">
+            <summary>
+            数字
+            </summary>
+        </member>
+        <member name="F:Cicada.Core.CharsScope.LowerLetters">
+            <summary>
+            小写字母
+            </summary>
+        </member>
+        <member name="F:Cicada.Core.CharsScope.UpperLetters">
+            <summary>
+            大写字母
+            </summary>
+        </member>
+        <member name="F:Cicada.Core.CharsScope.Letters">
+            <summary>
+            字母
+            </summary>
+        </member>
+        <member name="F:Cicada.Core.CharsScope.NumbersAndLowerLetters">
+            <summary>
+            数字和小写字母
+            </summary>
+        </member>
+        <member name="F:Cicada.Core.CharsScope.NumbersAndUpperLetters">
+            <summary>
+            数字和大写字母
+            </summary>
+        </member>
+        <member name="F:Cicada.Core.CharsScope.NumbersAndLetters">
+            <summary>
+            数字大小写字母
+            </summary>
+        </member>
+        <member name="F:Cicada.Core.CharsScope.UsualChinese">
+            <summary>
+            常用汉字
+            </summary>
+        </member>
+        <member name="F:Cicada.Core.CharsScope.All">
+            <summary>
+            数字，大小写字母和汉字
+            </summary>
+        </member>
+        <member name="T:System.AssemblyExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.AssemblyExtensions.GetAssemblyProduct(System.Reflection.Assembly)">
+            <summary>
+            获取AssemblyInfo.cs中定义的Product
+            </summary>
+            <param name="asm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.AssemblyExtensions.GetAssemblyVersion(System.Reflection.Assembly)">
+            <summary>
+            获取版本信息
+            </summary>
+            <param name="asm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.AssemblyExtensions.GetAssemblyGuidString(System.Reflection.Assembly)">
+            <summary>
+            获取指定Assembly的GUID
+            </summary>
+            <param name="asm"></param>
+            <returns></returns>
+        </member>
+        <member name="T:System.DateTimeExtensions">
+            <summary>
+            时间扩展
+            </summary>
+        </member>
+        <member name="M:System.DateTimeExtensions.BeginDayOfWeek(System.DateTime,System.Boolean)">
+            <summary>
+            获取指定日期所在周的起始日期，时分秒和传入日期相同
+            </summary>
+            <param name="date">指定日期</param>
+            <param name="isMonday">是否以周一为每周第一天</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.DateTimeExtensions.EndDayOfWeek(System.DateTime,System.Boolean)">
+            <summary>
+            获取指定日期所在周的终止日期，时分秒和传入日期相同
+            </summary>
+            <param name="date">指定日期</param>
+            <param name="isMonday">是否以周一为每周第一天</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.DateTimeExtensions.WeekCount(System.DateTime,System.DateTime)">
+            <summary>
+            获取时间段内包含的总周数（含起始周和结束周）
+            </summary>
+            <param name="start">起始日期</param>
+            <param name="end">终止日期</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.DateTimeExtensions.WeekCountOfYear(System.Int32)">
+            <summary>
+            获取指定年份的总周数
+            </summary>
+            <param name="year">年份</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.DateTimeExtensions.WeekOfYear(System.DateTime)">
+            <summary>
+            获取指定日期在这一年的第几周中
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.DateTimeExtensions.WeekOfMonth(System.DateTime)">
+            <summary>
+            获取指定日期在这一月的第几周中
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.DateTimeExtensions.BeginDayOfWeek(System.Int32,System.Int32)">
+            <summary>
+            获取指定年份中指定周数（第几周）的起始日期
+            </summary>
+            <param name="year">年份</param>
+            <param name="week">周数</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.DateTimeExtensions.EndDayOfWeek(System.Int32,System.Int32)">
+            <summary>
+            获取某年第几周的周末日期
+            </summary>
+            <param name="year">年份</param>
+            <param name="week">周数</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.DateTimeExtensions.IsCurrentWeek(System.DateTime)">
+            <summary>
+            判断指定日期是否是当前日期所在的周
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.DateTimeExtensions.IsSameWeek(System.DateTime,System.DateTime)">
+            <summary>
+            判断指定的日期是否在同一周中
+            </summary>
+            <param name="dtA">要比较的第一个日期</param>
+            <param name="dtB">要比较的第二个日期</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.DateTimeExtensions.DateTimeToUnixTime(System.DateTime)">
+            <summary>
+            将DateTime转换为Unix时间戳
+            </summary>
+            <param name="date">转换的日期时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.DateTimeExtensions.DateTimeToUnixTimeHex(System.DateTime,System.Boolean)">
+            <summary>
+            将DateTime转换为Unix时间戳的16进制表示，如：4DB6B9CD（8位）
+            </summary>
+            <param name="date">转换的日期时间</param>
+            <param name="upperCase">转化大小写</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.DateTimeExtensions.UnixTimeToDateTime(System.Int64)">
+            <summary>
+            将Unix时间戳转换为DateTime
+            </summary>
+            <param name="unixTime">Unix时间戳</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.DateTimeExtensions.UnixTimeHexToDateTime(System.String)">
+            <summary>
+            将Unix时间戳的16进制表示（如：4DB6B9CD）转换为DateTime
+            </summary>
+            <param name="unixTimeHex">Unix时间戳的16进制表示，如：4DB6B9CD（8位）</param>
+            <returns></returns>
+        </member>
+        <member name="T:System.GuidExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.GuidExtensions.ToPureString(System.Guid)">
+            <summary>
+            返回纯净的字符串（不带'-'字符）
+            </summary>
+            <param name="guid"></param>
+            <returns></returns>
+        </member>
+        <member name="T:System.ObjectExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.ObjectExtensions.ConvertTo``1(System.Object)">
+            <summary>
+             通用类型转换函数
+            </summary>
+            <typeparam name="T">转换的类型</typeparam>
+            <param name="value">需转换的值</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.ObjectExtensions.ConvertTo(System.Object,System.Type)">
+            <summary>
+            通用类型转换函数
+            </summary>
+            <param name="value">需转换的值</param>
+            <param name="type">转换的类型</param>
+            <returns></returns>
+        </member>
+        <member name="T:System.TypeExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.TypeExtensions.IsNullableType(System.Type)">
+            <summary>
+            判断是否为可空类型
+            </summary>
+            <param name="type">类型信息</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

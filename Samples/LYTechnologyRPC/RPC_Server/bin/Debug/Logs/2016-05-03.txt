@@ -1,0 +1,66 @@
+2016-05-03 14:31:41.5283 | Info  | start
+2016-05-03 14:39:00.0433 | Info  | start
+2016-05-03 14:41:12.9799 | Info  | start
+2016-05-03 14:43:51.2149 | Info  | start
+2016-05-03 14:47:25.7785 | Info  | start
+2016-05-03 15:01:25.4450 | Info  | start
+2016-05-03 15:02:55.6722 | Info  | start
+2016-05-03 15:03:56.3088 | Info  | start
+2016-05-03 15:05:59.6064 | Info  | start
+2016-05-03 15:09:08.8541 | Info  | start
+2016-05-03 15:09:08.9131 | Error | AppDomain未处理异常。
+2016-05-03 15:09:08.9342 | Info  | stop
+2016-05-03 15:09:14.1048 | Info  | start
+2016-05-03 15:09:14.1258 | Error | AppDomain未处理异常。
+2016-05-03 15:09:14.1413 | Info  | stop
+2016-05-03 15:09:21.4272 | Info  | start
+2016-05-03 15:09:21.4662 | Error | AppDomain未处理异常。
+2016-05-03 15:09:21.4792 | Info  | stop
+2016-05-03 15:09:38.7883 | Info  | start
+2016-05-03 15:09:38.7993 | Error | AppDomain未处理异常。
+2016-05-03 15:09:38.8243 | Info  | stop
+2016-05-03 15:10:38.8938 | Info  | start
+2016-05-03 15:10:38.9138 | Error | AppDomain未处理异常。
+2016-05-03 15:10:38.9328 | Info  | stop
+2016-05-03 15:13:34.8805 | Info  | start
+2016-05-03 15:13:34.8985 | Error | AppDomain未处理异常。
+2016-05-03 15:13:34.9125 | Info  | stop
+2016-05-03 15:16:26.8564 | Info  | start
+2016-05-03 15:16:26.8775 | Info  | 启动Rpc服务器 端口：7911
+2016-05-03 15:17:37.0451 | Info  | start
+2016-05-03 15:17:37.0651 | Info  | 启动Rpc服务器 端口：7911
+2016-05-03 15:17:44.6678 | Info  | stop
+2016-05-03 15:17:44.6678 | Error | Thrift.Transport.TTransportException: System.Net.Sockets.SocketException (0x80004005): 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.Accept()
+   在 System.Net.Sockets.TcpListener.AcceptTcpClient()
+   在 Thrift.Transport.TServerSocket.AcceptImpl()
+   在 Thrift.Transport.TServerSocket.AcceptImpl()
+   在 Thrift.Transport.TServerTransport.Accept()
+   在 Thrift.Server.TThreadedServer.Serve()
+2016-05-03 15:17:44.6678 | Info  | Rpc服务器已停止运行
+2016-05-03 15:18:00.9914 | Info  | start
+2016-05-03 15:18:01.0134 | Info  | 启动Rpc服务器 端口：7911
+2016-05-03 15:18:07.3559 | Info  | add
+2016-05-03 15:18:07.3559 | Info  | get
+2016-05-03 15:18:07.3689 | Info  | getlist
+2016-05-03 15:18:07.3689 | Info  | getmap
+2016-05-03 15:18:07.8782 | Info  | add
+2016-05-03 15:18:07.8782 | Info  | get
+2016-05-03 15:18:07.8882 | Info  | getlist
+2016-05-03 15:18:07.8882 | Info  | getmap
+2016-05-03 15:18:08.3976 | Info  | add
+2016-05-03 15:18:08.4036 | Info  | get
+2016-05-03 15:18:08.4036 | Info  | getlist
+2016-05-03 15:18:08.4246 | Info  | getmap
+2016-05-03 15:18:08.9310 | Info  | add
+2016-05-03 15:18:08.9310 | Info  | get
+2016-05-03 15:18:08.9310 | Info  | getlist
+2016-05-03 15:18:08.9590 | Info  | getmap
+2016-05-03 15:18:09.4674 | Info  | add
+2016-05-03 15:18:09.4674 | Info  | get
+2016-05-03 15:18:09.4774 | Info  | getlist
+2016-05-03 15:18:09.4774 | Info  | getmap
+2016-05-03 15:18:10.0027 | Info  | add
+2016-05-03 15:18:10.0107 | Info  | get
+2016-05-03 15:18:10.0107 | Info  | getlist
+2016-05-03 15:18:10.0358 | Info  | getmap

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cicada.Rpc</name>
+    </assembly>
+    <members>
+        <member name="M:Cicada.Rpc.ServiceCentre.IServicePublisher.Init(System.String,System.String,System.String)">
+            <summary>
+            初始化
+            </summary>
+            <param name="respository">仓库地址</param>
+            <param name="path">路径</param>
+            <param name="data">数据</param>
+        </member>
+        <member name="M:Cicada.Rpc.ServiceCentre.IServicePublisher.Publish">
+            <summary>
+            发布服务
+            </summary>
+        </member>
+        <member name="M:Cicada.Rpc.ServiceCentre.IServicePublisher.Cancel">
+            <summary>
+            取消发布
+            </summary>
+        </member>
+    </members>
+</doc>

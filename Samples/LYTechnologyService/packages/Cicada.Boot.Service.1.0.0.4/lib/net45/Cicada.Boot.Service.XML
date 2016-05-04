@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cicada.Boot.Service</name>
+    </assembly>
+    <members>
+        <member name="T:Cicada.Boot.Service.IService">
+            <summary>
+            Windows服务接口
+            </summary>
+        </member>
+        <member name="M:Cicada.Boot.Service.IService.Start">
+            <summary>
+            当启动时执行
+            </summary>
+        </member>
+        <member name="M:Cicada.Boot.Service.IService.Stop">
+            <summary>
+            当停止时执行
+            </summary>
+        </member>
+        <member name="T:Cicada.Boot.Service.ServiceApplication">
+            <summary>
+            服务应用程序
+            </summary>
+        </member>
+        <member name="M:Cicada.Boot.Service.ServiceApplication.Run">
+            <summary>
+            运行服务应用程序
+            </summary>
+        </member>
+    </members>
+</doc>
