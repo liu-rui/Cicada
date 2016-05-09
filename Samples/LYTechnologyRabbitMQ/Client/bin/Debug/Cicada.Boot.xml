@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cicada.Boot</name>
+    </assembly>
+    <members>
+        <member name="T:Cicada.Boot.CicadaApplication">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>
