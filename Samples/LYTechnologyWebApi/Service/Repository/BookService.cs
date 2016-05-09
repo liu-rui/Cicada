@@ -42,9 +42,12 @@ namespace Service.Repository
         /// <returns></returns>
         public Book GetBookInfo(int bookId)
         {
+            var book = _dbcontext.Set<Book>().Find(bookId);
             var bookSet = _dbcontext.Set<Book>();
-            var bookInfo = bookSet.Find(bookId);
-            return bookInfo;
+
+
+
+            return book;
         }
 
     }
