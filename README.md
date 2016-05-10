@@ -16,6 +16,10 @@
   * 2.1 [点击查看Window服务如何打包](HelpMd/WindowService.md)
   * 2.2 [点击查看Cicada框架缓存如何使用](HelpMd/Cache.md)
   * 2.3 [点击查看RPC如何配置使用](HelpMd/RPC.md)
+  * 2.3 [点击查看RabbitMQ如何配置使用](HelpMd/RabbitMQ.md)
+  
+### 3、功能模块开发过程中，一些调优的示例，具体请参考下面（可以一块探讨）：
+  * 3.1、[点击查看EntityFrameWork语句调优的示例](HelpMd/OptimalSql.md)
 
  注：项目程序都在Samples这个文件夹里；Tools文件夹里面是框架使用到的一些软件；一些Doc类型的文档都在Doc这个文件夹里。
 

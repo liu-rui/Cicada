@@ -13,7 +13,9 @@ namespace Service.Repository
         /// <returns></returns>
         public IList<Book> GetBookList()
         {
+            var dd= DbContext.Set<Book>();
             return DbContext.Set<Book>().ToList();
+            
         }
     }
 }

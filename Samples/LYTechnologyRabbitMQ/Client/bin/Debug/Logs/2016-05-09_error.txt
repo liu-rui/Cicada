@@ -1,0 +1,13 @@
+2016-05-09 10:03:43.8414 | Error | AppDomain未处理异常。 System.InvalidOperationException: 无效的消息队列渠道名称OrderCreate，请首先配置此渠道信息
+   在 Cicada.Mq.Sender.Send[T](String channel, T mesasge) 位置 e:\liu\workspace\net\Cicada\branches\1.0\src\Cicada.Mq\Sender.cs:行号 25
+   在 Client.Program.Main(String[] args) 位置 d:\灵铱公司技术资料\Exercise\LYTechnologyRabbitMQ\Client\Program.cs:行号 25
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart() 
+ ModuleBoot.OnUnhandledException => ModuleBoot.DoException => Log.Error 
+
