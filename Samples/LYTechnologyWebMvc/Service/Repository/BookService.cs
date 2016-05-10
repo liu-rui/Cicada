@@ -13,7 +13,7 @@ namespace Service.Repository
         /// <returns></returns>
         public IList<Book> GetBookList()
         {
-            DbContext.Set<Book>().Where(s => s.Id == 1).Select();
+            var dd= DbContext.Set<Book>();
             return DbContext.Set<Book>().ToList();
             
         }
