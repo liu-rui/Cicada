@@ -34,7 +34,7 @@
        ![uniform](/images/uniform.ico)
        
 ### 4、文档的相关介绍
-  * 4.1、有关MySQL数据库开发规范文件请下载[下载](https://github.com/Lidingxiang/Cicada/blob/master/Doc)
+  * 4.1、有关MySQL数据库开发规范文件请下载[下载](https://github.com/liu-rui/Cicada/blob/master/Doc)
 
  注：项目程序都在Samples这个文件夹里；Tools文件夹里面是框架使用到的一些软件；一些Doc类型的文档都在Doc这个文件夹里。
  
