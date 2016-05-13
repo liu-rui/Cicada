@@ -1,4 +1,4 @@
-
+﻿
 # Cicada 框架整体介绍
 
 首先得以肯定的是，这是一个很容易上手开发的系统框架，使开发人员不需要过多地去关注系统相对底层的一些开发，
@@ -18,8 +18,12 @@
   * 2.3 [点击查看RPC如何配置使用](HelpMd/RPC.md)
   * 2.3 [点击查看RabbitMQ如何配置使用](HelpMd/RabbitMQ.md)
   
-### 3、功能模块开发过程中，一些调优的示例，具体请参考下面（可以一块探讨）：
+### 3、功能模块开发过程中，一些推荐的示例，具体请参考下面（可以一块探讨）：
   * 3.1、[点击查看EntityFrameWork语句调优的示例](HelpMd/OptimalSql.md)
+  * 3.2、[在线API文档自动生成如何配置](HelpMd/Swagger.md)
+  
+       ![uniform](/images/uniform.ico)
 
  注：项目程序都在Samples这个文件夹里；Tools文件夹里面是框架使用到的一些软件；一些Doc类型的文档都在Doc这个文件夹里。
+ 
 
