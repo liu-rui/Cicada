@@ -23,5 +23,4 @@
 
  注：项目程序都在Samples这个文件夹里；Tools文件夹里面是框架使用到的一些软件；一些Doc类型的文档都在Doc这个文件夹里。
  
- [Image:ico.jpg]
-
+![Alt text](/images/uniform.ico)
