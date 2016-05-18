@@ -6,7 +6,7 @@
 
 * 2、配置Cicada.properties，和WebApi等的配置项一样配置即可。  
 
-* 3、使用如下图：
+* 3、使用如下图：  
 	![uniform](/images/UnitTest/002.png)
  
 
